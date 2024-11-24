@@ -12,14 +12,14 @@ const CircleLeft = () => {
         x: "-50%", // Start from the left
         y: "50%", // Start from below
         scale: 0.5,
-        opacity: 0,
+        opacity: 0.3,
       },
       {
-        x: "-30%", // End slightly to the left of center
-        y: "20%", // End slightly below center
-        opacity: 0.7, // Slightly transparent
+        x: "-30%", 
+        y: "20%", 
+        opacity: 1, // full transparent when it finishes animation
         scale: 1,
-        duration: 2,
+        duration: 4,
         ease: "power2.out",
       }
     );

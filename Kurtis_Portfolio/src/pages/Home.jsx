@@ -31,21 +31,26 @@ const Home = () => {
                 <FontAwesomeIcon icon={faSquareGithub} className="text-4xl lg:text-5xl text-gray-800 hover:text-periwinkle-500" />
               </a>
             </div>
-            <h2 className="text-black text-2xl lg:text-4xl font-semibold">
+            <h2 className="text-2xl lg:text-4xl font-semibold">
               A UX/UI designer and front-end developer crafting intuitive, responsive experiences.
             </h2>
           </div>
       
-          {/* Image Section */}
-          <div className="relative flex justify-center items-center lg:w-1/2">
-            <CircleLeft />
-            <CircleRight />
-            <img
-              src={Headshot}
-              alt="Kurtis"
-              className="w-64 h-64 lg:w-96 lg:h-96 object-cover rounded-full z-10 relative"
-            />
-          </div>
+   {/* Image Section */}
+<div className="relative flex flex-col justify-center items-center lg:w-1/2">
+  <div className="relative w-64 h-64 lg:w-96 lg:h-96">
+    <CircleLeft />
+    <CircleRight />
+    <img
+      src={Headshot}
+      alt="Kurtis"
+      className="w-full h-full object-cover rounded-full z-10 relative"
+    />
+  </div>
+  <p className="text-center font-bold text-5xl z-10 relative font-quicksand mt-4">
+    UX/UI Designer
+  </p>
+</div>
         </div>
       </div>
     </div>
