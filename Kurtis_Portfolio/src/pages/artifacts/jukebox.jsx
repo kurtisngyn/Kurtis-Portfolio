@@ -1,7 +1,12 @@
+import React from "react";
+import Header from "../../components/Header";
+
 function Jukebox() {
     return (
-      <h1>ehllo</h1>
+        <div>
+            <Header />
+        </div>
     );
-  }
-  
-export default Jukebox
+}
+
+export default Jukebox;

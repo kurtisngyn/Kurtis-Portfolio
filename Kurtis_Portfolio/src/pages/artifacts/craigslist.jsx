@@ -1,7 +1,12 @@
-function Craiglist() {
+import React from "react";
+import Header from "../../components/Header";
+
+function Craigslist() {
     return (
-      <h1>ehllo</h1>
+        <div>
+            <Header />
+        </div>
     );
-  }
-  
-export default Craiglist
+}
+
+export default Craigslist;

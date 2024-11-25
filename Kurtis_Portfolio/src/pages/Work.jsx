@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Header from "../components/Header"; 
 import Mockupcraiglist from "../assets/mockupcraiglist.png";
 import Mockupjuke from "../assets/Mockupjuke.png";
 import { Link } from 'react-router-dom';
 
+function Work() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration in milliseconds
+      once: true,     // Animation should happen only once
+    });
+  }, []);
 
-const Work = () => {
   const projects = [
     {
       label: "Craigslist",
@@ -42,8 +50,16 @@ const Work = () => {
       <Header />
 
       <div className="w-full px-4 lg:px-12 mt-10">
-        <h1 className="text-center mt-5 text-4xl lg:text-6xl font-bold">My Work</h1>
-        <p className="text-center mt-4 text-xl max-w-3xl mx-auto">
+        <h1 
+          className="text-center mt-5 text-4xl lg:text-6xl font-bold"
+          data-aos="fade-down"
+        >
+          My Work
+        </h1>
+        <p 
+          className="text-center mt-4 text-xl max-w-3xl mx-auto"
+          data-aos="fade-up"
+        >
           Here's a showcase of my projects and designs. Each piece represents my skills in UX/UI design and front-end development.
         </p>
       </div>
@@ -53,8 +69,9 @@ const Work = () => {
           <div 
             key={index} 
             className={`flex flex-col md:flex-row w-full max-w-6xl mb-20 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
+            data-aos="fade-up"
           >
-            <div className="md:w-1/2 p-6">
+            <div className="md:w-1/2 p-6" data-aos="fade-right">
               {project.label && (
                 <span className="bg-black text-white py-2 px-6 rounded-full text-sm font-bold tracking-wider shadow-md uppercase mb-4 inline-block">
                   {project.label}
@@ -69,7 +86,7 @@ const Work = () => {
                 View Project
               </Link>
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2" data-aos="fade-left">
               <img 
                 src={project.imageUrl} 
                 alt={project.title} 

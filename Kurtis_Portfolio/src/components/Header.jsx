@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link component from react-router-dom
+import Logo from "../assets/Logo.svg";
 
 const Header = () => {
   return (
     <header className="flex items-center justify-between px-12 py-2 bg-lavendar font-quicksand text-white text-lg">
       {/* Styling for icon*/}
       <div className="flex items-center space-x-2">
-        {/* Wrap the icon with a Link component to route to the home page */}
         <Link to="/">
-          <img src="Logo.svg" alt="Logo" className="w-32 h-32 cursor-pointer" />
+          <img src={Logo} alt="Logo" className="w-32 h-32 cursor-pointer" />
         </Link>
         {/* <span className="font-semibold text-lg">Designs</span> */}
       </div>

@@ -1,7 +1,12 @@
+import React from "react";
+import Header from "../../components/Header";
+
 function Plateful() {
     return (
-      <h1>ehllo</h1>
+        <div>
+            <Header />
+        </div>
     );
-  }
-  
-export default Plateful
+}
+
+export default Plateful;
