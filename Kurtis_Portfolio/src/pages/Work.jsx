@@ -4,6 +4,7 @@ import Mockupcraiglist from "../assets/mockupcraiglist.png";
 import Mockupjuke from "../assets/Mockupjuke.png";
 import { Link } from 'react-router-dom';
 
+
 const Work = () => {
   const projects = [
     {
@@ -11,28 +12,28 @@ const Work = () => {
       title: "Website Redesign",
       description: "The Craigslist project is to create a redesigned product that corrects the understanding of having modern UI/UX standards using user research and Figma mockup prototyping",
       imageUrl: Mockupcraiglist,
-      path: "/projects/craigslist"
+      path: "/artifacts/craigslist"
     },
     {
       label: "Jukebox", 
       title: "Hypothetical App Launch",
       description: "The Jukebox project is a conceptual app for a karaoke music streaming platform, offering a user-friendly experience and a visually attractive design through functionality. As a team using Waterfall methodology we create assets for an App launch.",
       imageUrl: Mockupjuke,
-      path: "/projects/jukebox"
+      path: "/artifacts/jukebox"
     },
     {
       label: "LiveSeeker",
       title: "UX/UI Case Study",
       description: "The LiverSeeker project is to create a design of a hypothetical app that is based on a relevant app today. The chosen app is Ticketmaster with the purpose of this project is to show ways to improve today’s standard of apps.",
       imageUrl: Mockupjuke,
-      path: "/projects/liveseeker"
+      path: "/artifacts/plateful"
     },
     {
       label: "Water+",
       title: "Hypothetical App Launch",
       description: "Project Water+ is a crowdsourced platform that lets you find and track quality drinking water refill stations wherever you are. This project not only aims to tackle a real-world problem but also serves as a UI/UX design initiative, focusing on creating an intuitive and user-friendly experience. From seamless navigation to visually engaging interfaces, the app prioritizes accessibility and ease of use to ensure users can quickly locate reliable water refill stations.",
       imageUrl: Mockupjuke,
-      path: "/projects/waterplus"
+      path: "/artifacts/waterplus"
     },
   ];
 

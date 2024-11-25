@@ -3,7 +3,10 @@ import Layout from "./pages/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Work from "./pages/work";
-
+import Craigslist from "./pages/artifacts/craigslist"
+import Jukebox from "./pages/artifacts/jukebox";
+import Plateful from "./pages/artifacts/plateful";
+import WaterPlus from "./pages/artifacts/Water+";
 const App = () => {
 
 
@@ -14,6 +17,10 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="work" element={<Work />} /> 
+        <Route path="/artifacts/craigslist" element={<Craigslist />} />
+        <Route path="/artifacts/jukebox" element={<Jukebox />} />
+        <Route path="/artifacts/plateful" element={<Plateful />} />
+        <Route path="/artifacts/waterplus" element={<WaterPlus />} />
         </Route>      
       </Routes>
     </BrowserRouter>
