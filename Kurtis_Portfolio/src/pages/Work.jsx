@@ -1,36 +1,47 @@
 import React from "react";
 import Header from "../components/Header"; 
+import Mockupcraiglist from "../assets/mockupcraiglist.png";
+import Mockupjuke from "../assets/Mockupjuke.png";
+import { Link } from 'react-router-dom';
 
 const Work = () => {
   const projects = [
     {
-      title: "Project 1",
-      description: "Description for Project",
-      imageUrl: "/path-to-project1-image.jpg", 
+      label: "Craigslist",
+      title: "Website Redesign",
+      description: "The Craigslist project is to create a redesigned product that corrects the understanding of having modern UI/UX standards using user research and Figma mockup prototyping",
+      imageUrl: Mockupcraiglist,
+      path: "/projects/craigslist"
     },
     {
-      title: "Project 2",
-      description: "Description for Project",
-      imageUrl: "/path-to-project2-image.jpg", 
+      label: "Jukebox", 
+      title: "Hypothetical App Launch",
+      description: "The Jukebox project is a conceptual app for a karaoke music streaming platform, offering a user-friendly experience and a visually attractive design through functionality. As a team using Waterfall methodology we create assets for an App launch.",
+      imageUrl: Mockupjuke,
+      path: "/projects/jukebox"
     },
     {
-      title: "Project 3",
-      description: "Description for Project",
-      imageUrl: "/path-to-project3-image.jpg", 
+      label: "LiveSeeker",
+      title: "UX/UI Case Study",
+      description: "The LiverSeeker project is to create a design of a hypothetical app that is based on a relevant app today. The chosen app is Ticketmaster with the purpose of this project is to show ways to improve today’s standard of apps.",
+      imageUrl: Mockupjuke,
+      path: "/projects/liveseeker"
     },
     {
-      title: "Project 4",
-      description: "Description for project",
-      imageUrl: "/path-to-project4-image.jpg", 
+      label: "Water+",
+      title: "Hypothetical App Launch",
+      description: "Project Water+ is a crowdsourced platform that lets you find and track quality drinking water refill stations wherever you are. This project not only aims to tackle a real-world problem but also serves as a UI/UX design initiative, focusing on creating an intuitive and user-friendly experience. From seamless navigation to visually engaging interfaces, the app prioritizes accessibility and ease of use to ensure users can quickly locate reliable water refill stations.",
+      imageUrl: Mockupjuke,
+      path: "/projects/waterplus"
     },
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-lavendar">
+    <div className="flex flex-col min-h-screen bg-lavendar font-quicksand">
       <Header />
 
       <div className="w-full px-4 lg:px-12 mt-10">
-        <h1 className="text-center mt-5 font-quicksand text-4xl lg:text-6xl font-bold">My Work</h1>
+        <h1 className="text-center mt-5 text-4xl lg:text-6xl font-bold">My Work</h1>
         <p className="text-center mt-4 text-xl max-w-3xl mx-auto">
           Here's a showcase of my projects and designs. Each piece represents my skills in UX/UI design and front-end development.
         </p>
@@ -38,14 +49,31 @@ const Work = () => {
 
       <div className="flex-grow flex flex-col items-center justify-start px-4 lg:px-12 mt-10">
         {projects.map((project, index) => (
-          <div key={index} className={`flex flex-col md:flex-row w-full max-w-6xl mb-20 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+          <div 
+            key={index} 
+            className={`flex flex-col md:flex-row w-full max-w-6xl mb-20 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
+          >
             <div className="md:w-1/2 p-6">
+              {project.label && (
+                <span className="bg-black text-white py-2 px-6 rounded-full text-sm font-bold tracking-wider shadow-md uppercase mb-4 inline-block">
+                  {project.label}
+                </span>
+              )}
               <h2 className="text-3xl font-semibold mb-4">{project.title}</h2>
               <p className="text-lg mb-4">{project.description}</p>
-              <a href="#" className="text-periwinkle-500 hover:underline">View Project</a>
+              <Link 
+                to={project.path} 
+                className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+              >
+                View Project
+              </Link>
             </div>
             <div className="md:w-1/2">
-              <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover rounded-lg shadow-md" />
+              <img 
+                src={project.imageUrl} 
+                alt={project.title} 
+                className="w-full h-full object-cover rounded-lg shadow-md" 
+              />
             </div>
           </div>
         ))} 
