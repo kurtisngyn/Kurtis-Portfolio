@@ -58,43 +58,50 @@ function Work() {
         </h1>
         <p 
           className="text-center mt-4 text-xl max-w-3xl mx-auto"
-          data-aos="fade-up"
+          data-aos="fade-down"
         >
           Here's a showcase of my projects and designs. Each piece represents my skills in UX/UI design and front-end development.
         </p>
       </div>
 
       <div className="flex-grow flex flex-col items-center justify-start px-4 lg:px-12 mt-10">
-        {projects.map((project, index) => (
-          <div 
-            key={index} 
-            className={`flex flex-col md:flex-row w-full max-w-6xl mb-20 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
-            data-aos="fade-up"
-          >
-            <div className="md:w-1/2 p-6" data-aos="fade-right">
-              {project.label && (
-                <span className="bg-black text-white py-2 px-6 rounded-full text-sm font-bold tracking-wider shadow-md uppercase mb-4 inline-block">
-                  {project.label}
-                </span>
-              )}
-              <h2 className="text-3xl font-semibold mb-4">{project.title}</h2>
-              <p className="text-lg mb-4">{project.description}</p>
-              <Link 
-                to={project.path} 
-                className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
-              >
-                View Project
-              </Link>
-            </div>
-            <div className="md:w-1/2" data-aos="fade-left">
-              <img 
-                src={project.imageUrl} 
-                alt={project.title} 
-                className="w-full h-full object-cover rounded-lg shadow-md" 
-              />
-            </div>
-          </div>
-        ))} 
+      {projects.map((project, index) => (
+  <div 
+    key={index} 
+    className={`flex flex-col md:flex-row w-full max-w-6xl mb-20 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
+    data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+  >
+    <div 
+      className="md:w-1/2 p-6" 
+      data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+    >
+      {/* Content */}
+      {project.label && (
+        <span className="bg-black text-white py-2 px-6 rounded-full text-sm font-bold tracking-wider shadow-md uppercase mb-4 inline-block">
+          {project.label}
+        </span>
+      )}
+      <h2 className="text-3xl font-semibold mb-4">{project.title}</h2>
+      <p className="text-lg mb-4">{project.description}</p>
+      <Link 
+        to={project.path} 
+        className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+      >
+        View Project
+      </Link>
+    </div>
+    <div 
+      className="md:w-1/2" 
+      data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+    >
+      <img 
+        src={project.imageUrl} 
+        alt={project.title} 
+        className="w-full h-full object-cover rounded-lg shadow-md" 
+      />
+    </div>
+  </div>
+))}
       </div>
     </div>
   );
