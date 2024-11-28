@@ -85,7 +85,7 @@ function Work() {
       <p className="font-quicksand text-lg mb-4">{project.description}</p>
       <Link 
         to={project.path} 
-        className="font-quicksand inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+        className="font-quicksand inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-periwinkle-500 transition-colors"
       >
         View Project
       </Link>
