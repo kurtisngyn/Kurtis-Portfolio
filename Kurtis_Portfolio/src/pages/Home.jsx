@@ -31,7 +31,7 @@ const Home = () => {
                 <FontAwesomeIcon icon={faSquareGithub} className="text-4xl lg:text-5xl text-gray-800 hover:text-periwinkle-500" />
               </a>
             </div>
-            <h2 className="text-2xl lg:text-4xl font-semibold">
+            <h2 className="font-quicksand text-2xl lg:text-4xl font-semibold">
               A UX/UI designer and front-end developer crafting intuitive, responsive experiences.
             </h2>
           </div>

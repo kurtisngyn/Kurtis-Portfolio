@@ -3,6 +3,13 @@ import { Link } from "react-router-dom"; // Import Link component from react-rou
 import Logo from "../assets/Logo.svg";
 
 const Header = () => {
+
+    const emailAddress = "kurtisnguyen1234@gmail.com";
+  
+    const handleEmailClick = () => {
+      window.location.href = `mailto:${emailAddress}`;
+    };
+
   return (
     <header className="flex items-center justify-between px-12 py-2 bg-lavendar font-quicksand text-white text-lg">
       {/* Styling for icon*/}
@@ -14,7 +21,7 @@ const Header = () => {
       </div>
 
       {/* Button on the right */}
-      <button className="px-6 py-3 bg-black hover:bg-gray-700 text-white font-quicksand font-bold rounded-lg shadow-lg w-[130px]">
+      <button onClick= {handleEmailClick} className="px-6 py-3 bg-black hover:bg-gray-700 text-white font-quicksand font-bold rounded-lg shadow-lg w-[130px]">
         Email me
       </button>
     </header>

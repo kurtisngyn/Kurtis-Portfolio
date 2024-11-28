@@ -51,13 +51,13 @@ function Work() {
 
       <div className="w-full px-4 lg:px-12 mt-10">
         <h1 
-          className="text-center mt-5 text-4xl lg:text-6xl font-bold"
+          className="font-quicksand text-center mt-5 text-4xl lg:text-6xl font-bold"
           data-aos="fade-down"
         >
           My Work
         </h1>
         <p 
-          className="text-center mt-4 text-xl max-w-3xl mx-auto"
+          className="font-quicksand text-center mt-4 text-xl max-w-3xl mx-auto"
           data-aos="fade-down"
         >
           Here's a showcase of my projects and designs. Each piece represents my skills in UX/UI design and front-end development.
@@ -81,11 +81,11 @@ function Work() {
           {project.label}
         </span>
       )}
-      <h2 className="text-3xl font-semibold mb-4">{project.title}</h2>
-      <p className="text-lg mb-4">{project.description}</p>
+      <h2 className=" font-quicksand text-3xl font-semibold mb-4">{project.title}</h2>
+      <p className="font-quicksand text-lg mb-4">{project.description}</p>
       <Link 
         to={project.path} 
-        className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+        className="font-quicksand inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
       >
         View Project
       </Link>
