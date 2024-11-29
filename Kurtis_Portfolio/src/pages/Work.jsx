@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "../components/Header"; 
 import Mockupcraiglist from "../assets/mockupcraiglist.png";
-import Mockupjuke from "../assets/MockupJukebox.png";
+import MockupJukebox from "../assets/MockupJukebox.png";
 import { Link } from 'react-router-dom';
 
 function Work() {
