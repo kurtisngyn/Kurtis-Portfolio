@@ -6,16 +6,15 @@ import CraiglistHeader from "../../components/Craiglist-header";
 
 function Craigslist() {
     return (
-        <div className="flex flex-col bg-lavendar">
+        <div className="flex flex-col min-h-screen bg-lavender">
             <Header /> 
             <BackBtn />
-            <div className="flex-grow flex items-center justify-center overflow-hidden px-4 lg:px-6 font-quicksand font-semibold text-6xl mb-6">
+            
             <CraiglistHeader />
+            
+            <div className="flex-grow flex items-center justify-center px-4 lg:px-6">
+                <img src={Craigslistphoto} alt="Craigslistintrophoto" className="max-w-full h-auto" />
             </div>
-            <div className="flex-grow flex items-center justify-center overflow-hidden px-4 lg:px-6 ">
-                <img src={Craigslistphoto} alt="Craigslistintrophoto" className="mt-4 mx-auto" />
-            </div>
-
         </div>
     );
 }
