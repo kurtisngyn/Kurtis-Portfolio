@@ -2,19 +2,25 @@ import React from "react";
 import Header from "../../components/Header";
 import BackBtn from "../../components/Back-btn";
 import Craigslistphoto from "../../assets/craigslistphoto.png";
-import CraiglistHeader from "../../components/Craiglist-header";
+import CraigslistHeader from "../../components/Craigslistpieces/Craigslist-header";
+import CraiglistOverview from "../../components/Craigslistpieces/Craigslist-overview";
+import Craigslistselect from "../../components/Craigslistpieces/Craigslist-select";
 
 function Craigslist() {
     return (
         <div className="flex flex-col min-h-screen bg-lavender">
             <Header /> 
             <BackBtn />
-            
-            <CraiglistHeader />
-            
-            <div className="flex-grow flex items-center justify-center px-4 lg:px-6">
-                <img src={Craigslistphoto} alt="Craigslistintrophoto" className="max-w-full h-auto" />
+            <CraigslistHeader />
+            <div className="flex-grow flex items-center justify-center px-4 lg:px-6 mt-10 mb-10">
+                <img 
+                    src={Craigslistphoto} 
+                    alt="Craigslistintrophoto" 
+                    className="w-full max-w-screen-xl h-auto" // Full width, up to max width of large screens
+                />
             </div>
+            <CraiglistOverview />
+            <Craigslistselect />
         </div>
     );
 }

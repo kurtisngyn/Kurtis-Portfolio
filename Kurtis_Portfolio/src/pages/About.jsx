@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg-lavendar min-h-screen flex flex-col items-center overflow-hidden" data-aos="fade-in">
+    <div className="bg-lavender min-h-screen flex flex-col items-center overflow-hidden" data-aos="fade-in">
       <div className="flex flex-col w-full">
         <Header />
       </div>

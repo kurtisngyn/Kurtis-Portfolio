@@ -8,7 +8,7 @@ import { faLinkedin, faSquareBehance, faSquareGithub } from '@fortawesome/free-b
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-lavendar">
+    <div className="flex flex-col min-h-screen bg-lavender">
       {/* Header */}
       <Header />
 

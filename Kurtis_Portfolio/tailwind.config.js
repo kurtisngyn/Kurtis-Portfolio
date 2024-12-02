@@ -10,7 +10,7 @@ export default {
       colors: {
         'periwinkle': '#BEB7DF', // Custom color
         'periwinkle-500': '#A8A0C8',
-        'lavendar': '#E5E2F4',
+        'lavender': '#E5E2F4',
         
         'black': '#333333',
         'white': '#F5F5F5',

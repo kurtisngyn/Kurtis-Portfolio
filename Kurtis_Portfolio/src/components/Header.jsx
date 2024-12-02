@@ -11,7 +11,7 @@ const Header = () => {
     };
 
   return (
-    <header className="flex items-center justify-between px-12 py-2 bg-lavendar font-quicksand text-white text-lg">
+    <header className="flex items-center justify-between px-12 py-2 bg-lavender font-quicksand text-white text-lg">
       {/* Styling for icon*/}
       <div className="flex items-center space-x-2">
         <Link to="/">

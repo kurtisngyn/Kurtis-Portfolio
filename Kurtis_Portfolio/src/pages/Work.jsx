@@ -46,7 +46,7 @@ function Work() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-lavendar font-quicksand">
+    <div className="flex flex-col min-h-screen bg-lavender font-quicksand">
       <Header />
 
       <div className="w-full px-4 lg:px-12 mt-10">
