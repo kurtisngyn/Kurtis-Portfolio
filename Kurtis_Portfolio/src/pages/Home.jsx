@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-import Headshot from "../assets/Headshot.png";
 import Headshotmin from "../assets/Headshotmin.png";
 import CircleLeft from "../components/Circle-Left";
 import CircleRight from "../components/Circle-Right";

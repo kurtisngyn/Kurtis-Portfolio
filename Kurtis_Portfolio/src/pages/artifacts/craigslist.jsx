@@ -9,15 +9,17 @@ import Craigslistselect from "../../components/Craigslistpieces/Craigslist-selec
 function Craigslist() {
     return (
         <div className="flex flex-col min-h-screen bg-lavender">
-            <Header /> 
+            <Header />
             <BackBtn />
             <CraigslistHeader />
-            <div className="flex-grow flex items-center justify-center px-4 lg:px-6 mt-10 mb-10">
-                <img 
-                    src={Craigslistphoto} 
-                    alt="Craigslistintrophoto" 
-                    className="w-full max-w-screen-xl h-auto" // Full width, up to max width of large screens
-                />
+            <div className="flex-grow flex items-center justify-center px-4 lg:px-6 mt-10 mb-4">
+                <div className="w-full max-w-8xl flex items-center justify-center"> 
+                    <img 
+                        src={Craigslistphoto} 
+                        alt="Craigslist Intro Photo" 
+                        className="h-auto" 
+                    />
+                </div>
             </div>
             <CraiglistOverview />
             <Craigslistselect />
