@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Headshot from "../assets/Headshot.png";
+import Headshotmin from "../assets/Headshotmin.png";
 import CircleLeft from "../components/Circle-Left";
 import CircleRight from "../components/Circle-Right";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -42,7 +43,7 @@ const Home = () => {
     <CircleLeft />
     <CircleRight />
     <img
-      src={Headshot}
+      src={Headshotmin}
       alt="Kurtis"
       className="w-full h-full object-cover rounded-full z-10 relative"
     />
