@@ -1,8 +1,8 @@
 import React from "react";
-import craigslisthomepage from "../../assets/craigslisthomepage.png";
-import craiglisttrust from "../../assets/craigslisttrust.png";
-import craigslistpersona from "../../assets/craigslistpersona.png";
-import craigslistempathymap from "../../assets/craigslistempathymap.png";
+import craigslisthomepage from "../../assets/craiglistphotos/craigslisthomepage.png";
+import craiglisttrust from "../../assets/craiglistphotos/craigslisttrust.png";
+import craigslistpersona from "../../assets/craiglistphotos/craigslistpersona.png";
+import craigslistempathymap from "../../assets/craiglistphotos/craigslistempathymap.png";
 function Craigslistresearch() {
     return (
         <div className="bg-lavender py-12">

@@ -1,5 +1,5 @@
 import React from "react";
-import CraigslistEmblem from "../../assets/CraigslistEmblem.svg";
+import CraigslistEmblem from "../../assets/craiglistphotos/CraigslistEmblem.svg";
 
 function CraigslistHeader() {
     return (
