@@ -27,7 +27,7 @@ const Home = () => {
       <div className="flex-grow flex items-center justify-center overflow-hidden px-4 lg:px-6">
         <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto gap-8">
           {/* Intro Section */}
-          <div className="flex flex-col justify-center lg:w-1/2 mt-32">
+          <div className="flex flex-col justify-center lg:w-1/2 mt-24">
             <h1 className="font-quicksand text-black text-6xl lg:text-8xl font-bold mb-6">
               Hey, I'm <span className="text-periwinkle-500 drop-shadow-lg">Kurtis</span>
             </h1>
