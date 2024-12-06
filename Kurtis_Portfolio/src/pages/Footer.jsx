@@ -1,23 +1,46 @@
 import React from "react";
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, useLocation } from 'react-router-dom';
 
 const Layout = () => {
+    const location = useLocation();
+
     return (
         <div className="flex flex-col min-h-screen">
             <main className="flex-grow">
                 <Outlet />
             </main>
-            <footer className="bg-white text-black py-3 border-t-2 border-black fixed bottom-0 left-0 w-full z-10">
-                <nav className="container mx-auto px-4">
-                    <ul className="font-quicksand text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold flex justify-center space-x-4 md:space-x-6 lg:space-x-8">
+            <footer className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-10">
+                <nav className="bg-white rounded-full shadow-lg px-4 py-2">
+                    <ul className="font-quicksand text-base font-bold flex items-center space-x-4">
                         <li>
-                            <Link to="/" className="hover:text-gray-400 transition duration-300">Home</Link>
+                            <Link 
+                                to="/" 
+                                className={`px-4 py-2 rounded-full transition duration-300 ${
+                                    location.pathname === '/' ? 'bg-black text-white' : 'text-black hover:bg-black hover:text-white'
+                                }`}
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/About" className="hover:text-gray-400 transition duration-300">About</Link>
+                            <Link 
+                                to="/About" 
+                                className={`px-4 py-2 rounded-full transition duration-300 ${
+                                    location.pathname === '/About' ? 'bg-black text-white' : 'text-black hover:bg-black hover:text-white'
+                                }`}
+                            >
+                                About
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/Work" className="hover:text-gray-400 transition duration-300">Work</Link>
+                            <Link 
+                                to="/Work" 
+                                className={`px-4 py-2 rounded-full transition duration-300 ${
+                                    location.pathname === '/Work' ? 'bg-black text-white' : 'text-black hover:bg-black hover:text-white'
+                                }`}
+                            >
+                                Work
+                            </Link>
                         </li>
                     </ul>
                 </nav>
