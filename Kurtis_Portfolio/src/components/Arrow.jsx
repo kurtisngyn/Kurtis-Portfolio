@@ -1,9 +1,9 @@
-// src/components/ScrollArrow.jsx
+// src/components/Arrow.jsx
 
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 
-const ScrollArrow = ({ scrollTo }) => {
+const Arrow = () => {
   useEffect(() => {
     // GSAP animation for the arrow
     gsap.to('.scroll-arrow', {
@@ -16,12 +16,12 @@ const ScrollArrow = ({ scrollTo }) => {
   }, []);
 
   return (
-    <div className="flex justify-center mt-8">
-      <button onClick={scrollTo} className="text-6xl text-black font-quicksand hover:text-periwinkle-500 scroll-arrow">
+    <div className="flex justify-center mb-28">
+      <div className="text-6xl text-black font-quicksand hover:text-periwinkle-500 scroll-arrow">
         ↓
-      </button>
+      </div>
     </div>
   );
 };
 
-export default ScrollArrow;
+export default Arrow;
