@@ -28,7 +28,7 @@ const CircleLeft = () => {
   return (
     <div
       ref={circleRef}
-      className="absolute w-80 h-80 bg-periwinkle-500 rounded-full"
+      className="absolute w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 bg-periwinkle-500 rounded-full"
       style={{ zIndex: 1 }} // Ensure it's behind the image
     />
   );
