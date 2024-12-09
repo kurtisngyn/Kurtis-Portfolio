@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "../components/Header";
 import AbtSummary from "../components/Abtmepieces/Abtsummary";
+import ImageCard from "../components/ImageCard";
 
 const About = () => {
   useEffect(() => {
@@ -31,7 +32,7 @@ const About = () => {
 
       {/* Square Section */}
     <AbtSummary />
-      
+      <ImageCard />
     </div>
   );
 };
