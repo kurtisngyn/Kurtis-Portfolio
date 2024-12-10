@@ -1,10 +1,10 @@
 import React from "react";
-import Reacticon from "../../assets/Abtassests/react.svg";
-import Figmaicon from "../../assets/Abtassests/figma.svg";
-import Aeicon from "../../assets/Abtassests/Ae.svg";
-import Pricon from "../../assets/Abtassests/Pr.svg";
-import Aiicon from "../../assets/Abtassests/Ai.svg";
-import Psicon from "../../assets/Abtassests/ps.svg";
+import Reacticon from "../../assets/Abtassets/react.svg";
+import Figmaicon from "../../assets/Abtassets/figma.svg";
+import Aeicon from "../../assets/Abtassets/ae.svg";
+import Pricon from "../../assets/Abtassets/pr.svg";
+import Aiicon from "../../assets/Abtassets/ai.svg";
+import Psicon from "../../assets/Abtassets/ps.svg";
 
 function ToolSection() {
     return (
