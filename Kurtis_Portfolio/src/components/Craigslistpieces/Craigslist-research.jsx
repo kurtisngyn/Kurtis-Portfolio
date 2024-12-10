@@ -9,7 +9,7 @@ function Craigslistresearch() {
             <div className="container mx-auto px-4">
                 <div className="flex-grow flex flex-col items-center justify-center">
 
-                    <h1 className="mb-4 mt-2 font-quicksand font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                    <h1 className="mb-4 font-quicksand font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                         Research Phase
                     </h1>
                     <p className="mb-6 font-quicksand text-sm sm:text-base md:text-lg lg:text-xl text-left max-w-3xl text-center">
