@@ -97,7 +97,7 @@ function Work() {
     >
       
        {/* <StaticCircle /> */}
-       
+       {/* <StaticCircle /> */}
       <img 
         src={project.imageUrl} 
         alt={project.title} 
