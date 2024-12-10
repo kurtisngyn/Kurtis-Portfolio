@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import Mockupcraiglist from "../assets/mockupcraiglist.png";
 import MockupJukebox from "../assets/MockupJukebox.png";
 import { Link } from 'react-router-dom';
+import StaticCircle from "../components/Static-Circle";
+import CircleLeft from "../components/Circle-Left";
 
 function Work() {
   useEffect(() => {
@@ -48,7 +50,6 @@ function Work() {
   return (
     <div className="flex flex-col min-h-screen bg-lavender font-quicksand">
       <Header />
-
       <div className="w-full px-4 lg:px-12 mt-10">
         <h1 
           className="font-quicksand text-center mt-5 text-4xl lg:text-6xl font-bold"
@@ -94,6 +95,9 @@ function Work() {
       className="md:w-1/2" 
       data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
     >
+      
+       <StaticCircle />
+       
       <img 
         src={project.imageUrl} 
         alt={project.title} 
