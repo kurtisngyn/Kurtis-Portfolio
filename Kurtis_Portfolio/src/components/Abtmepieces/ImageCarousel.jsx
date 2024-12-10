@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import Pose from "../../assets/Abtassests/first.jpg";
-import AnotherImage from "../../assets/Abtassests/second.jpg";
-import ThirdImage from "../../assets/Abtassests/third.jpg";
+import Pose from "../../assets/Abtassets/first.jpg";
+import AnotherImage from "../../assets/Abtassets/second.jpg";
+import ThirdImage from "../../assets/Abtassets/third.jpg";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
