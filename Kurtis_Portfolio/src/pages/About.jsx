@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import Header from "../components/Header";
 import AbtSummary from "../components/Abtmepieces/Abtsummary";
 import ImageCarousel from "../components/Abtmepieces/ImageCarousel";
-import PersonalCard from "../components/Abtmepieces/PersonalCard";
+import DescriptionCard from "../components/Abtmepieces/DescriptionCard";
 import ToolSection from "../components/Abtmepieces/ToolSection";
 
 const About = () => {
@@ -48,7 +48,7 @@ const About = () => {
 
         {/* Personal Card */}
         <div className="lg:w-1/2 w-full max-w-md mx-auto flex flex-col justify-between">
-          <PersonalCard />
+          <DescriptionCard />
         </div>
       </div>
 

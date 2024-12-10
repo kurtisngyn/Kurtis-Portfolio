@@ -1,6 +1,6 @@
 import React from "react";
 
-function PersonalCard() {
+function DescriptionCard() {
   return (
     <div
       className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6"
@@ -20,4 +20,4 @@ function PersonalCard() {
   );
 }
 
-export default PersonalCard;
+export default DescriptionCard;
