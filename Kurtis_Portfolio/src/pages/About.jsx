@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import Header from "../components/Header";
 import AbtSummary from "../components/Abtmepieces/Abtsummary";
 import ImageCarousel from "../components/Abtmepieces/ImageCarousel";
-import PersonalCard from "../components/Abtmepieces/PersonalCard";
+import PersonalCard from "../components/Abtmepieces/Personalcard";
 import ToolSection from "../components/Abtmepieces/ToolSection";
 
 const About = () => {
