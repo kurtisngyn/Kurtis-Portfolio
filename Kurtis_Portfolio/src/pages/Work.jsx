@@ -96,7 +96,7 @@ function Work() {
       data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
     >
       
-     
+       {/* <StaticCircle /> */}
        
       <img 
         src={project.imageUrl} 
