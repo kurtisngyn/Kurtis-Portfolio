@@ -7,7 +7,7 @@ function Craigslistmockup() {
                 Mockup Phase
             </h1>
             <p className="mb-6 font-quicksand text-sm sm:text-base md:text-lg lg:text-xl text-left max-w-3xl text-center">
-                During this phase, a finished look for a Craigslist redesign is created in hopes showing the improved UX/UI.
+                During this phase, a finished look for a Craigslist redesign is created in hopes showing the improved UX/UI. This is a high 
             </p>
             <div className="bg-white shadow-lg rounded-lg p-6 mb-8 w-full mt-8">
                 <div className="flex flex-col items-center justify-start">
