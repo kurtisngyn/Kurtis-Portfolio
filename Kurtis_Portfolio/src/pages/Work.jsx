@@ -52,20 +52,20 @@ function Work() {
       <Header />
       <div className="w-full px-4 lg:px-12 mt-10">
         <h1 
-          className="font-quicksand text-center mt-5 text-4xl lg:text-6xl font-bold"
+          className="font-quicksand text-black text-center mt-5 text-4xl lg:text-6xl font-bold"
           data-aos="fade-down"
         >
           My Work
         </h1>
         <p 
-          className="font-quicksand text-center mt-4 text-xl max-w-3xl mx-auto"
+          className="font-quicksand text-black text-center mt-4 text-xl max-w-3xl mx-auto"
           data-aos="fade-down"
         >
           Here's a showcase of my projects and designs. Each piece represents my skills in UX/UI design and front-end development.
         </p>
       </div>
 
-      <div className="flex-grow flex flex-col items-center justify-start px-4 lg:px-12 mt-10">
+      <div className="flex-grow flex flex-col items-center text-black justify-start px-4 lg:px-12 mt-10">
       {projects.map((project, index) => (
   <div 
     key={index} 
@@ -82,7 +82,7 @@ function Work() {
           {project.label}
         </span>
       )}
-      <h2 className=" font-quicksand text-3xl font-semibold mb-4">{project.title}</h2>
+      <h2 className=" font-quicksand text-3xl text-black font-semibold mb-4">{project.title}</h2>
       <p className="font-quicksand text-lg mb-4">{project.description}</p>
       <Link 
         to={project.path} 
