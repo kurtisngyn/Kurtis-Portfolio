@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import JukeboxHeader from "../../components/Jukeboxpieces/Juke-header";
 import Jukeboxphoto from "../../assets/Jukeboxphotos/Jukeboxphoto.jpg";
 import JukeOverview from "../../components/Jukeboxpieces/Juke-overview";
+import Jukeselect from "../../components/Jukeboxpieces/Juke-selection";
 
 function Jukebox() {
     return (
@@ -22,6 +23,7 @@ function Jukebox() {
                     </div>
                 </div>
                 <JukeOverview />
+                <Jukeselect />
             </div>
         </div>
     );

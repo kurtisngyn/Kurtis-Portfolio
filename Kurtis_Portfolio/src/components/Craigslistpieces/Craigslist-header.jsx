@@ -7,7 +7,7 @@ function CraigslistHeader() {
             <div className="container mx-auto px-4">
                 <div className="bg-white rounded-lg shadow-md w-full max-w-8xl h-auto relative"> 
                     <div className="p-4 lg:p-6">
-                        <h1 className="font-quicksand font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl flex items-center justify-between">
+                        <h1 className="font-quicksand font-semibold text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl flex items-center justify-between">
                             <span>Case Study</span>
                             <img src={CraigslistEmblem} alt="Craigslist Emblem" className="h-12 w-auto sm:h-16 md:h-20 lg:h-24" />
                         </h1>
