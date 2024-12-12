@@ -9,7 +9,7 @@ function Craigslistmockup() {
                         Mockup Phase
                     </h1>
                     <p className="mb-6 font-quicksand text-sm sm:text-base md:text-lg lg:text-xl text-center max-w-3xl">
-                        During this phase, a finished look for a Craigslist redesign is created in hopes of showing the improved UX/UI.
+                    This phase involves creating low-fidelity wireframes to outline the basic structure and layout of key pages, followed by iterative refinements based on usability feedback to a finished high-fidelity prototype.
                     </p>
                     <div className="bg-white shadow-lg rounded-lg p-4 sm:p-6 mb-8 w-full mt-8">
                         <div className="flex flex-col items-center justify-start">

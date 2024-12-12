@@ -10,10 +10,10 @@ function Craigslistsbrainstorm() {
                 <div className="flex-grow flex flex-col items-center justify-center">
 
                     <h1 className="mb-4 font-quicksand font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                        Research Phase
+                        Brainstorm Phase
                     </h1>
-                    <p className="mb-6 font-quicksand text-sm sm:text-base md:text-lg lg:text-xl text-left max-w-3xl text-center">
-                        yooooo </p>
+                    <p className="mb-12 font-quicksand text-sm sm:text-base md:text-lg lg:text-xl text-left max-w-3xl text-center">
+                    The Craigslist redesign brainstorming phase is a strategic exploration focused on understanding user needs, identifying pain points, and reimagining the platform's user experience. By conducting user research, creating personas, analyzing competitive landscapes, and generating innovative design concepts, the team aims to enhance navigation, improve safety, and create a more intuitive interface while maintaining the platform's core simplicity and functionality. </p>
 
                     <div className="bg-white shadow-lg rounded-lg p-6 mb-8 w-full flex flex-col items-center">
                         <h2 className="mb-4 font-quicksand font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">

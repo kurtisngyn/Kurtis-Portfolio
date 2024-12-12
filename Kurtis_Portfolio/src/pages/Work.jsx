@@ -4,6 +4,8 @@ import "aos/dist/aos.css";
 import Header from "../components/Header"; 
 import Mockupcraiglist from "../assets/mockupcraiglist.png";
 import MockupJukebox from "../assets/MockupJukebox.png";
+import MockupPlateful from "../assets/mockupplateful.png";
+import MockupWaterplus from "../assets/mockupwaterplus.;
 import { Link } from 'react-router-dom';
 import StaticCircle from "../components/Static-Circle";
 import CircleLeft from "../components/Circle-Left";
@@ -32,17 +34,17 @@ function Work() {
       path: "/artifacts/jukebox"
     },
     {
-      label: "LiveSeeker",
-      title: "UX/UI Case Study",
-      description: "The LiverSeeker project is to create a design of a hypothetical app that is based on a relevant app today. The chosen app is Ticketmaster with the purpose of this project is to show ways to improve today’s standard of apps.",
-      imageUrl: MockupJukebox,
+      label: "Plateful!",
+      title: "App Design",
+      description: "Plateful is a new app focused on ordering food catering services. Unlike food delivery apps, it targets bigger event hosts directly with caterers for easy ordering. The catering businesses can showcase their menus and manage orders efficiently.",
+      imageUrl: MockupPlateful,
       path: "/artifacts/plateful"
     },
     {
       label: "Water+",
       title: "Hypothetical App Launch",
       description: "Project Water+ is a crowdsourced platform that lets you find and track quality drinking water refill stations wherever you are. This project not only aims to tackle a real-world problem but also serves as a UI/UX design initiative, focusing on creating an intuitive and user-friendly experience. From seamless navigation to visually engaging interfaces, the app prioritizes accessibility and ease of use to ensure users can quickly locate reliable water refill stations.",
-      imageUrl: MockupJukebox,
+      imageUrl: MockupWaterplus,
       path: "/artifacts/waterplus"
     },
   ];
