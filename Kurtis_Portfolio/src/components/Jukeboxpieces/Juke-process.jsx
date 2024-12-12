@@ -34,8 +34,7 @@ function Jukeprocess() {
                             className="max-w-full h-auto mb-6"
                         />
                         <p className="mb-6 text-black font-quicksand text-sm sm:text-base md:text-lg lg:text-xl text-left max-w-3xl text-center">
-                            Craigslist's user experience is outdated and inconsistent. The platform's design feels out of date compared to modern standards, with a cluttered layout and lack of intuitive navigation. These design flaws make it difficult for users to find what they need but also creates a lack of trust and security. This creates a frustrating user experience.
-                            While Craigslist has maintained a loyal user base, its outdated interface is limiting its potential to attract a wider audience and meet the expectations of today's users. with taking valued input from multiple users to make sure it's a credible and worth looking into. From the flaws highlighted, with the user research identifying the flaws, it informed what solutions could be done to imagine the user flow of the new redesigned look.
+                        The waterfall methodology provided our team with a clear, structured approach to creating the Jukebox app mockup. By breaking the project into distinct phases—planning, design, and review—we could focus on one step at a time without overlapping tasks. This sequential process ensured every stage was thoroughly completed before moving forward, reducing confusion and keeping the team aligned. It also helped us manage roles, timelines, and deliverables effectively, resulting in a well-organized and polished mockup.
                         </p>
                     </div>
 
