@@ -7,8 +7,6 @@ import MockupJukebox from "../assets/MockupJukebox.jpg";
 import MockupPlateful from "../assets/mockupplateful.jpg";
 import MockupWaterplus from "../assets/mockupwaterplus.jpg";
 import { Link } from 'react-router-dom';
-import StaticCircle from "../components/Static-Circle";
-import CircleLeft from "../components/Circle-Left";
 
 function Work() {
   useEffect(() => {

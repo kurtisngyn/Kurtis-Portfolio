@@ -1,5 +1,5 @@
 import React from "react";
-import JukeboxEmblem from "../../assets/Jukeboxphotos/JukeboxEmblem.png";
+import JukeboxEmblem from "../../assets/Jukeboxphotos/jukeboxemblem.png";
 
 function JukeboxHeader() {
     return (
