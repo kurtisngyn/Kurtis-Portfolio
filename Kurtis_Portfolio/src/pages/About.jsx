@@ -14,6 +14,8 @@ const About = () => {
       once: true,
       easing: 'ease-out-cubic',
     });
+    // Always start at the top of the page
+    window.scrollTo(0, 0);
   }, []);
 
   return (

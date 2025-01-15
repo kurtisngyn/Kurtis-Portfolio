@@ -14,6 +14,8 @@ function Work() {
       duration: 1200, // Animation duration in milliseconds
       once: true,     // Animation should happen only once
     });
+    // When opening a new page always start at the top
+    window.scrollTo(0, 0); 
   }, []);
 
   const projects = [
