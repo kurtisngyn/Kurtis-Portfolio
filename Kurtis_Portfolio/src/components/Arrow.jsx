@@ -15,11 +15,23 @@ const Arrow = () => {
     });
   }, []);
 
+  // Function to handle scrolling
+  const handleScroll = () => {
+    // Scrolls smoothly to the next section
+    window.scrollTo({
+      top: window.innerHeight, // Scrolls down by one viewport height
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className="flex justify-center mb-28">
-      <div className="text-6xl text-black font-quicksand hover:text-periwinkle-500 scroll-arrow">
+      <button
+        className="text-6xl text-black font-quicksand hover:text-periwinkle-500 scroll-arrow focus:outline-none"
+        onClick={handleScroll}
+      >
         ↓
-      </div>
+      </button>
     </div>
   );
 };
