@@ -4,7 +4,7 @@ import Headshotmin from "../assets/Headshotmin.png";
 import CircleLeft from "../components/Circle-Left";
 import CircleRight from "../components/Circle-Right";
 import Arrow from "../components/Arrow";
-import Featurebanner from "../components/Featured/Featured-banner";
+import Projectcards from "../components/Projects-Card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faSquareBehance, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -56,7 +56,8 @@ const Home = () => {
         </div>
       </div>
       <Arrow />
-      <Featurebanner />
+     
+      <Projectcards />
     </div>
   );
 };
