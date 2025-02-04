@@ -4,9 +4,10 @@ import Headshotmin from "../assets/Headshotmin.png";
 import CircleLeft from "../components/Circle-Left";
 import CircleRight from "../components/Circle-Right";
 import Arrow from "../components/Arrow";
-import Projectcards from "../components/Projects-Card";
+import Recentprojs from "../components/Recentprojs";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faSquareBehance, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -57,7 +58,8 @@ const Home = () => {
       </div>
       <Arrow />
      
-      <Projectcards />
+      <Recentprojs />
+      <Footer />
     </div>
   );
 };
