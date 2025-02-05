@@ -4,7 +4,7 @@ import WaterHeader from "../../components/Waterpieces/Water-header";
 import Waterphoto from "../../assets/waterphotos/waterphoto.jpg";
 import WaterOverview from "../../components/Waterpieces/Water-overview";
 import Waterselect from "../../components/Waterpieces/Water-selection";
-
+import Footer from "../../components/Footer";
 
 function Waterplus() {
     return (
@@ -26,6 +26,7 @@ function Waterplus() {
                 <WaterOverview />
                 <Waterselect />
             </div>
+            <Footer />
         </div>
     );
 }

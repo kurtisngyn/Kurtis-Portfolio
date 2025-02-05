@@ -51,7 +51,7 @@ const Home = () => {
               />
             </div>
             <p className="text-center text-black font-bold text-3xl sm:text-4xl lg:text-5xl z-10 relative font-quicksand mt-4">
-              UX/UI Designer
+              😽🙀😹
             </p>
           </div>
         </div>

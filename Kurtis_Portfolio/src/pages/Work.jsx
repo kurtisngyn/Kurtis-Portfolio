@@ -7,6 +7,7 @@ import MockupJukebox from "../assets/MockupJukebox.jpg";
 import MockupPlateful from "../assets/mockupplateful.jpg";
 import MockupWaterplus from "../assets/mockupwaterplus.jpg";
 import { Link } from 'react-router-dom';
+import Footer from "../components/Footer";
 
 function Work() {
   useEffect(() => {
@@ -109,6 +110,7 @@ function Work() {
   </div>
 ))}
       </div>
+      <Footer />
     </div>
   );
 };

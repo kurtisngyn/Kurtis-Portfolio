@@ -6,7 +6,7 @@ import AbtSummary from "../components/Abtmepieces/Abtsummary";
 import ImageCarousel from "../components/Abtmepieces/ImageCarousel";
 import DescriptionCard from "../components/Abtmepieces/DescriptionCard";
 import ToolSection from "../components/Abtmepieces/ToolSection";
-
+import Footer from "../components/Footer";
 const About = () => {
   useEffect(() => {
     AOS.init({
@@ -64,6 +64,7 @@ const About = () => {
 
       {/* margin bottom basically lol */}
       <div className="h-28" />
+      <Footer />
     </div>
   );
 };

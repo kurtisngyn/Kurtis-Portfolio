@@ -4,6 +4,7 @@ import Craigslistphoto from "../../assets/craiglistphotos/craigslistphoto.png";
 import CraigslistHeader from "../../components/Craigslistpieces/Craigslist-header";
 import CraiglistOverview from "../../components/Craigslistpieces/Craigslist-overview";
 import Craigslistselect from "../../components/Craigslistpieces/Craigslist-select";
+import Footer from "../../components/Footer";
 
 function Craigslist() {
     return (
@@ -21,6 +22,7 @@ function Craigslist() {
             </div>
             <CraiglistOverview />
             <Craigslistselect />
+            <Footer />
         </div>
     );
 }
