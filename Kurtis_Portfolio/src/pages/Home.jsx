@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import Headshotmin from "../assets/Headshotmin.png";
+import Headshot from "../assets/Headshot.jpg";
 import CircleLeft from "../components/Circle-Left";
 import CircleRight from "../components/Circle-Right";
 import Arrow from "../components/Arrow";
@@ -45,7 +45,7 @@ const Home = () => {
               <CircleLeft />
               <CircleRight />
               <img
-                src={Headshotmin}
+                src={Headshot}
                 alt="Kurtis"
                 className="w-full h-full object-cover rounded-full z-10 relative"
               />
