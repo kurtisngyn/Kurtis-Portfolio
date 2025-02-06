@@ -9,20 +9,19 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full flex items-center justify-between px-4 sm:px-6 lg:px-8 py-5 bg-black font-quicksand text-white text-lg rounded-t-3xl">
-
+    <footer className="w-full flex flex-col sm:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 py-3 sm:py-5 bg-black font-quicksand text-white text-lg rounded-t-3xl">
       
-      {/* Email on the left */}
-      <a href="mailto:kurtis@email.com" className="text-white hover:underline">
+      {/* Email centered on mobile, left on larger screens */}
+      <a href="mailto:kurtis@email.com" className="text-white hover:underline mb-3 sm:mb-0">
         kurtis@email.com
       </a>
 
-      {/* Logo on the right */}
-      <div className="flex items-center space-x-2">
+      {/* Logo centered on mobile, right on larger screens */}
+      <div className="flex items-center">
         <img
           src={Logopurple}
           alt="Logo"
-          className="w-32 h-32 cursor-pointer"
+          className="w-16 h-16 sm:w-32 sm:h-32 cursor-pointer"
           onClick={scrollToTop} // Calls the scroll function when clicked
         />
       </div>
