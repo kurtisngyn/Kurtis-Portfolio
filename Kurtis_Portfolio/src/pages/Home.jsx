@@ -20,7 +20,7 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto gap-8 py-8 lg:py-16">
           {/* Intro Section */}
           <div className="flex flex-col justify-center lg:w-1/2 mt-4 sm:mt-8 lg:mt-0">
-            <h1 className="font-quicksand text-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6">
+            <h1 className="font-quicksand text-black text-4xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6">
               Hey, I'm <span className="text-periwinkle-500 drop-shadow-lg">Kurtis</span>
             </h1>
             <div className="flex gap-4 mb-4 sm:mb-6">

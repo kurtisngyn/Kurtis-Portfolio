@@ -19,14 +19,14 @@ function ImageCarousel() {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg overflow-hidden p-6">
+    <div className="max-w-sm bg-white p-8 rounded-lg overflow-hidden">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="flex justify-center">
             <img 
               src={image} 
               alt={`Slide ${index + 1}`} 
-              className="object-cover rounded-lg" 
+              className="object-cover " 
             />
           </div>
         ))}

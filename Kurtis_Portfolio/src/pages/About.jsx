@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "../components/Header";
 import AbtSummary from "../components/Abtmepieces/Abtsummary";
-import ImageCarousel from "../components/Abtmepieces/ImageCarousel";
+// import ImageCarousel from "../components/Abtmepieces/ImageCarousel";
 import DescriptionCard from "../components/Abtmepieces/DescriptionCard";
 import ToolSection from "../components/Abtmepieces/ToolSection";
 import Footer from "../components/Footer";
@@ -43,13 +43,10 @@ const About = () => {
         className="w-full mt-12 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col lg:flex-row items-center gap-8 max-w-screen-lg mx-auto"
         data-aos="fade-up"
       >
-        {/* Image Carousel */}
-        <div className="lg:w-1/2 w-full max-w-md mx-auto min-h-[300px]">
-          <ImageCarousel />
-        </div>
+        
 
         {/* Personal Card */}
-        <div className="lg:w-1/2 w-full max-w-md mx-auto flex flex-col justify-between">
+        <div className="mx-10">
           <DescriptionCard />
         </div>
       </div>
