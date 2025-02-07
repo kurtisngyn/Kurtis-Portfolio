@@ -23,7 +23,7 @@ const Layout = () => {
             </main>
 
             {/* Floating navigation */}
-            <footer className="fixed bottom-6 left-1/2 mb-8 transform -translate-x-1/2 z-10">
+            <footer className="fixed bottom-6 left-1/2 mb-5 transform -translate-x-1/2 z-10">
                 <nav className={`rounded-full shadow-lg py-1.5 transition-colors duration-300 ${isAtBottom ? "bg-black text-white" : "bg-white text-black"}`}>
                     <ul className="font-quicksand text-base font-bold flex items-center space-x-4">
                         <li>
