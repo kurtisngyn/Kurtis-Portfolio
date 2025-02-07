@@ -29,12 +29,12 @@ function Projectcards() {
   ];
 
   return (
-    <div className="mt-10 space-y-8 max-w-7xl mb-20 mx-auto w-full px-4 sm:px-6 lg:px-8">
+    <div className="mt-10 space-y-8 max-w-7xl mb-20 mx-auto w-full ">
       {projects.map((project, index) => (
         <Link
           key={index}
           to={project.path}
-          className="flex flex-col sm:flex-row bg-periwinkle rounded-lg shadow-md p-4 sm:p-6 w-full items-center sm:items-start gap-4 sm:gap-6"
+          className="flex sm:flex-row bg-periwinkle rounded-lg shadow-md p-4 sm:p-6 w-full items-center sm:items-start gap-4 sm:gap-6"
           data-aos="fade-up"
         >
           <div className="flex-1 text-center sm:text-left">
