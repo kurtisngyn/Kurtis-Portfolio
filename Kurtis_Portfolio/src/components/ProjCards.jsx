@@ -50,7 +50,7 @@ function Projectcards() {
           <img
             src={project.imageUrl}
             alt={project.title}
-            className="w-32 h-32 sm:w-40 sm:h-40 lg:w-56 lg:h-56 rounded-lg object-cover mt-4 sm:mt-0"
+            className=" sm:w-70 sm:h-80 lg:w-90 lg:h-80 rounded-lg object-cover mt-4 sm:mt-0"
           />
         </Link>
       ))}
