@@ -17,7 +17,7 @@ function RecentProjs() {
     <div className="flex flex-col min-h-screen bg-lavender font-quicksand">
       <div className="w-full px-4 sm:px-6 lg:px-8 mt-10">
         <h1 
-          className="font-sans text-black text-center mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold"
+          className="font-sans text-black tracking-tight text-center mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold"
           data-aos="fade-down"
         >
           Recent Projects
