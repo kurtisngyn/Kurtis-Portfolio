@@ -26,17 +26,17 @@ const About = () => {
       {/* About Me Title */}
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
         <h1
-          data-aos="fade-up"
-          className="text-center mt-5 font-quicksand text-4xl sm:text-5xl md:text-6xl text-black font-bold"
+          data-aos="fade-right"
+          className="text-left font-outfit mt-5 text-4xl sm:text-5xl md:text-6xl text-black font-bold tracking-tight"
         >
-          About Me
+          about me
         </h1>
       </div>
 
       {/* Summary Section */}
-      <div className="w-full mt-6 px-4 sm:px-6 md:px-8 lg:px-12">
+      {/* <div className="w-full mt-6 px-4 sm:px-6 md:px-8 lg:px-12">
         <AbtSummary />
-      </div>
+      </div> */}
 
       {/* Image Carousel and PersonalCard Section */}
       <div
