@@ -50,8 +50,9 @@ function Projectcards() {
           <img
             src={project.imageUrl}
             alt={project.title}
-            className=" sm:w-70 sm:h-80 lg:w-90 lg:h-80 rounded-lg object-cover mt-4 sm:mt-0"
+            className=" lg:w-90 lg:h-80 rounded-lg object-cover mt-4 sm:mt-0"
           />
+          {/* sm:w-40 sm:h-30 ^make this responsive after */}
         </Link>
       ))}
     </div>
