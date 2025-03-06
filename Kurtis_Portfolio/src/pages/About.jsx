@@ -24,14 +24,20 @@ const About = () => {
       <Header />
 
       {/* About Me Title */}
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="w-full px-4 sm:px-6 md:px-8 ">
         <h1
           data-aos="fade-right"
-          className="text-left font-outfit mt-5 text-4xl sm:text-5xl md:text-6xl text-black font-bold tracking-tight"
+          className="font-outfit mt-5 text-4xl sm:text-5xl md:text-6xl text-black font-bold tracking-tight"
         >
           about me
         </h1>
       </div>
+      <div class="p-60 w-full max-w-8xl  rounded-3xl  bg-periwinkle rounded-lg">
+      <div class="p-40  max-w-8xl mx-auto  bg-white rounded-lg text-center">
+  
+  </div>
+</div>
+
 
       {/* Summary Section */}
       {/* <div className="w-full mt-6 px-4 sm:px-6 md:px-8 lg:px-12">
@@ -39,25 +45,25 @@ const About = () => {
       </div> */}
 
       {/* Image Carousel and PersonalCard Section */}
-      <div
+      {/* <div
         className="w-full mt-12 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col lg:flex-row items-center gap-8 max-w-screen-lg mx-auto"
         data-aos="fade-up"
-      >
+      > */}
         
 
         {/* Personal Card */}
-        <div className="mx-10">
+        {/* <div className="mx-10">
           <DescriptionCard />
         </div>
-      </div>
+      </div> */}
 
       {/* Tool Section */}
-      <div
+      {/* <div
         className="w-full mt-16 px-4 sm:px-6 md:px-8 lg:px-12"
         data-aos="fade-up"
       >
         <ToolSection />
-      </div>
+      </div> */}
 
       {/* margin bottom basically lol */}
       <div className="h-28" />
