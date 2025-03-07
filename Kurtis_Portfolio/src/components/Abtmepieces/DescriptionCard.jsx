@@ -4,10 +4,10 @@ import ImageCarousel from "./ImageCarousel";
 function DescriptionCard() {
   return (
     <div
-      className="flex justify-center gap-10 rounded-lg"
+      className=""
       data-aos="fade-up"
     >
-      <div className="flex p-10 rounded-2xl  gap-5">
+      <div className="flex mt-10 rounded-2xl  gap-5">
         <div className="flex-1 p-7 bg-white rounded-lg">
           <h2 className="text-xl sm:text-2xl font-bold text-black font-quicksand mb-4">
             Outside of work...

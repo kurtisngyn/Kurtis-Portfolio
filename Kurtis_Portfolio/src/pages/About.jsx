@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "../components/Header";
 import AbtSummary from "../components/Abtmepieces/Abtsummary";
+import Abtmain from "../components/Abtmepieces/Abtmain";
 // import ImageCarousel from "../components/Abtmepieces/ImageCarousel";
 import DescriptionCard from "../components/Abtmepieces/DescriptionCard";
 import ToolSection from "../components/Abtmepieces/ToolSection";
@@ -27,16 +28,15 @@ const About = () => {
       <div className="w-full px-4 sm:px-6 md:px-8 ">
         <h1
           data-aos="fade-right"
-          className="font-outfit mt-5 text-4xl sm:text-5xl md:text-6xl text-black font-bold tracking-tight"
+          className="font-outfit mt-5 mb-10   text-4xl sm:text-5xl md:text-6xl text-black font-bold tracking-tight"
         >
           about me
         </h1>
-      </div>
-      <div class="p-60 w-full max-w-8xl  rounded-3xl  bg-periwinkle rounded-lg">
-      <div class="p-40  max-w-8xl mx-auto  bg-white rounded-lg text-center">
-  
-  </div>
+        <div class="rounded-2xl py-10 px-4 flex flex-col items-center bg-periwinkle">
+  <Abtmain />
+  <DescriptionCard />
 </div>
+      </div>
 
 
       {/* Summary Section */}
