@@ -15,7 +15,7 @@ function Projectcards() {
     {
       title: "Water+",
       description: "music & karaoke streaming app",
-      linkText: "a mobile app prototype for music lovers - with user research strategies",
+      linkText: "A crowdsourcing water supply app for user based goals",
       imageUrl: MockupWaterplus,
       path: "/artifacts/waterplus",
     },
