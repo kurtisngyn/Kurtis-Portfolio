@@ -33,7 +33,7 @@ function ImageCarousel() {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false, // Disable default slick arrows
+    arrows: false, // Hiding default slick arrows
     autoplay: true,
     autoplaySpeed: 9000,
     cssEase: "ease-in-out",
@@ -41,14 +41,14 @@ function ImageCarousel() {
 
   return (
     <div
-      className="w-full h-96 bg-white rounded-lg overflow-hidden relative"
+      className="w-full h-72 bg-white rounded-lg overflow-hidden relative flex justify-center items-center"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Custom Arrows - Outside of Overlay */}
+      {/* Custom Arrows at Bottom Corners */}
       <button
         onClick={goToPrev}
-        className={`absolute bottom-4 left-6 text-white text-3xl cursor-pointer z-20 transition-opacity ${
+        className={`absolute bottom-4 left-4 text-white text-3xl cursor-pointer z-20 transition-opacity ${
           isHovered ? "opacity-100" : "opacity-0"
         }`}
         style={{ pointerEvents: isHovered ? "auto" : "none" }}
@@ -58,7 +58,7 @@ function ImageCarousel() {
 
       <button
         onClick={goToNext}
-        className={`absolute bottom-4 right-6 text-white text-3xl cursor-pointer z-20 transition-opacity ${
+        className={`absolute bottom-4 right-4 text-white text-3xl cursor-pointer z-20 transition-opacity ${
           isHovered ? "opacity-100" : "opacity-0"
         }`}
         style={{ pointerEvents: isHovered ? "auto" : "none" }}
@@ -66,24 +66,26 @@ function ImageCarousel() {
         <FaArrowRight />
       </button>
 
-      <Slider ref={sliderRef} {...settings}>
+      <Slider ref={sliderRef} {...settings} className="w-full">
         {images.map((image, index) => (
-          <div key={index} className="relative w-full h-96">
-            {/* Image */}
+          <div
+            key={index}
+            className="relative w-full h-72 flex justify-center items-center bg-black"
+          >
+            {/* Image - Now centered correctly */}
             <img
               src={image.src}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
 
-            {/* Full Hover Overlay */}
+            {/* Overlay with Description */}
             <div
               className={`absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-center transition-opacity duration-300 ${
                 isHovered ? "opacity-100" : "opacity-0"
               }`}
             >
-              {/* Description at the bottom center */}
-              <p className="text-white text-lg font-semibold text-center mb-5">
+              <p className="text-white text-lg font-semibold text-center mb-5 px-4">
                 {image.description}
               </p>
             </div>
