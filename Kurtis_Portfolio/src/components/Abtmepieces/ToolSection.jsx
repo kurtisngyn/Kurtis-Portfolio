@@ -13,7 +13,7 @@ function ToolSection() {
           data-aos="fade-right"
         >
           <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-black font-outfit text-left">
-            empty
+            
           </h2>
           
 

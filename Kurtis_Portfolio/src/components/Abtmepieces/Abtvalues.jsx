@@ -1,7 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import Aeicon from "../../assets/Abtassets/ae.svg";
+import Pricon from "../../assets/Abtassets/pr.svg";
+import Aiicon from "../../assets/Abtassets/ai.svg";
+import Psicon from "../../assets/Abtassets/ps.svg";
 
 // Add all icons to the library
 library.add(fab);
@@ -14,8 +18,14 @@ function Abtvalues() {
     { icon: ["fab", "react"], name: "ReactJS" },
     { icon: ["fab", "html5"], name: "HTML5" },
     { icon: ["fab", "css3-alt"], name: "CSS3" },
-    { icon: ["fab", "js-square"], name: "JavaScript" },
-    { icon: ["fab", "adobe"], name: "Adobe Cloud" }
+    { icon: ["fab", "js-square"], name: "JavaScript" }
+  ];
+
+  const adobeTools = [
+    { src: Aiicon, name: "Illustrator" },
+    { src: Psicon, name: "Photoshop" },
+    { src: Pricon, name: "Premiere Pro" },
+    { src: Aeicon, name: "After Effects" }
   ];
 
   return (
@@ -26,7 +36,7 @@ function Abtvalues() {
           <h2 className="font-outfit text-2xl sm:text-2xl md:text-3xl text-black font-bold tracking-tight mb-4">
             I often work with:
           </h2>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-3 gap-8 mb-4">
             {tools.map((tool, index) => (
               <div key={index} className="flex flex-col items-center">
                 <FontAwesomeIcon
@@ -34,7 +44,22 @@ function Abtvalues() {
                   className="h-12 w-12 mb-2"
                   color={iconColor}
                 />
-                <p className="text-sm sm:text-base text-black font-outfit text-center">{tool.name}</p>
+                <p className="text-sm sm:text-base text-black font-outfit text-center">
+                  {tool.name}
+                </p>
+              </div>
+            ))}
+
+            {adobeTools.map((tool, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <img
+                  src={tool.src}
+                  alt={tool.name}
+                  className="h-12 w-12 mb-2"
+                />
+                <p className="text-sm sm:text-base text-black font-outfit text-center">
+                  {tool.name}
+                </p>
               </div>
             ))}
           </div>
@@ -42,10 +67,10 @@ function Abtvalues() {
 
         {/* Right Side - Longer Description Card */}
         <div className="w-3/5 p-7 bg-white rounded-2xl">
-          <h2 className="font-outfit text-2xl sm:text-2xl md:text-3xl text-black font-bold tracking-tight mb-4">
-            Values
+          <h2 className="font-outfit text-2xl sm:text-2xl md:text-4xl text-black font-bold tracking-tight mb-4">
+            values
           </h2>
-          <div className="text-sm sm:text-base md:text-lg text-black font-outfit">
+          <div className="text-lg sm:text-xl md:text-2xl text-black font-outfit mt-[40px]">
             <p className="mb-3">
               I deeply value communication and the connections we build through shared experiences.
             </p>
