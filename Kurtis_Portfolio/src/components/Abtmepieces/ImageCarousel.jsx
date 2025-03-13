@@ -4,7 +4,7 @@ import Pose from "../../assets/Abtassets/Resultphoto.jpg";
 import Photoshoot from "../../assets/Abtassets/Photoshoot.jpg";
 import Naruto from "../../assets/Abtassets/Naruto.jpg";
 
-import Larrabee from "../../assets/Abtassets/larrabee.jpg";
+import Larrabee from "../../assets/Abtassets/Larrabee.jpg";
 import VideoFile from "../../assets/Abtassets/Hikevid.mp4"; // Video file
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
