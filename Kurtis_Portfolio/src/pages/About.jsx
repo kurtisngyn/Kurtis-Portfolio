@@ -29,12 +29,13 @@ const About = () => {
       <div className="flex-grow bg-periwinkle rounded-2xl -mt-3 -mb-10 px-4 sm:px-6 md:px-8 pt-16">
         {/* About Me Section */}
         <div className="flex items-center justify-between mb-10">
-          <h1
-            data-aos="fade-right"
-            className="font-outfit text-4xl sm:text-5xl md:text-6xl text-black font-bold tracking-tight"
-          >
-            about me
-          </h1>
+        <h1
+data-aos="fade-right"
+className="font-outfit text-4xl sm:text-5xl md:text-7 xl text-black font-bold tracking-tight"
+>
+about me
+</h1>
+
           <button
             onClick={() =>
               window.open(
@@ -50,10 +51,10 @@ const About = () => {
 
         {/* Main Content Sections */}
         <div className="flex flex-col items-center mb-20">
-          <Abtmain />
+          {/* <Abtmain /> */}
           <DescriptionCard />
-          <ToolSection />
           <Abtvalues />
+          <ToolSection />
         </div>
       </div>
 

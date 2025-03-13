@@ -68,7 +68,7 @@ function ImageCarousel() {
       <Slider ref={sliderRef} {...settings} className="w-full">
         {media.map((item, index) => (
           <div key={index} className="relative w-full flex justify-center items-center bg-black">
-           <div className="relative w-full h-[80vh] flex justify-center items-center bg-black">
+           <div className="relative w-full h-[50vh] flex justify-center items-center bg-black">
            {item.type === "video" ? (
   <video
     src={item.src}
