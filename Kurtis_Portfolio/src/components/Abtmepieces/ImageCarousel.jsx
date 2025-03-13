@@ -1,31 +1,30 @@
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
-import Pose from "../../assets/Abtassets/first.jpg";
-import AnotherImage from "../../assets/Abtassets/second.jpg";
-import ThirdImage from "../../assets/Abtassets/third.jpg";
-import testimage from "../../assets/Abtassets/test.jpg";
+import Pose from "../../assets/Abtassets/Resultphoto.jpg";
+import Photoshoot from "../../assets/Abtassets/Photoshoot.jpg";
+import Naruto from "../../assets/Abtassets/Naruto.jpg";
+
+import Larrabee from "../../assets/Abtassets/larrabee.jpg";
+import VideoFile from "../../assets/Abtassets/Hikevid.mp4"; // Video file
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
+
 function ImageCarousel() {
-  const images = [
-    { src: Pose, description: "Beautiful sunset at the beach" },
-    { src: AnotherImage, description: "Hiking in the mountains" },
-    { src: ThirdImage, description: "Exploring the city streets" },
-    { src: testimage, description: "Relaxing at the lake" },
+  const media = [
+    { type: "video", src: VideoFile, description: "diez vistas trail" },
+    { type: "image", src: Naruto, description: "learning my ninja way!" },
+    { type: "image", src: Larrabee, description: "exploring washington" },
+    { type: "image", src: Photoshoot, description: "photoshoot" },
+    { type: "image", src: Pose, description: "→ results" },
   ];
 
   const [isHovered, setIsHovered] = useState(false);
   const sliderRef = useRef(null);
 
-  const goToPrev = () => {
-    if (sliderRef.current) sliderRef.current.slickPrev();
-  };
-
-  const goToNext = () => {
-    if (sliderRef.current) sliderRef.current.slickNext();
-  };
+  const goToPrev = () => sliderRef.current?.slickPrev();
+  const goToNext = () => sliderRef.current?.slickNext();
 
   const settings = {
     dots: true,
@@ -33,7 +32,7 @@ function ImageCarousel() {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false, // Hiding default slick arrows
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 9000,
     cssEase: "ease-in-out",
@@ -41,11 +40,11 @@ function ImageCarousel() {
 
   return (
     <div
-      className="w-full h-72 bg-white rounded-lg overflow-hidden relative flex justify-center items-center"
+      className="w-full max-w-4xl mx-auto bg-white rounded-2xl overflow-hidden relative flex justify-center items-center"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Custom Arrows at Bottom Corners */}
+      {/* Custom Navigation Arrows */}
       <button
         onClick={goToPrev}
         className={`absolute bottom-4 left-4 text-white text-3xl cursor-pointer z-20 transition-opacity ${
@@ -67,17 +66,27 @@ function ImageCarousel() {
       </button>
 
       <Slider ref={sliderRef} {...settings} className="w-full">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="relative w-full h-72 flex justify-center items-center bg-black"
-          >
-            {/* Image - Now centered correctly */}
-            <img
-              src={image.src}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-full object-contain"
-            />
+        {media.map((item, index) => (
+          <div key={index} className="relative w-full flex justify-center items-center bg-black">
+           <div className="relative w-full h-[80vh] flex justify-center items-center bg-black">
+           {item.type === "video" ? (
+  <video
+    src={item.src}
+    className="w-full h-full object-cover"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+) : (
+  <img
+    src={item.src}
+    alt={`Slide ${index + 1}`}
+    className="w-full h-full object-cover"
+  />
+)}
+</div>
+
 
             {/* Overlay with Description */}
             <div
@@ -86,7 +95,7 @@ function ImageCarousel() {
               }`}
             >
               <p className="text-white text-lg font-semibold text-center mb-5 px-4">
-                {image.description}
+                {item.description}
               </p>
             </div>
           </div>
