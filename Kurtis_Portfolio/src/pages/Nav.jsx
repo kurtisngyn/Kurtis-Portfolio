@@ -40,7 +40,7 @@ const Layout = () => {
                         </li>
                         <li>
                             <Link 
-                                to="/About" 
+                                to="/about" 
                                 className={`px-6 py-2 rounded-full transition duration-300 ${
                                     location.pathname === '/About' 
                                         ? isAtBottom ? 'bg-white text-black' : 'bg-black text-white' 
@@ -52,7 +52,7 @@ const Layout = () => {
                         </li>
                         <li>
                             <Link 
-                                to="/Work" 
+                                to="/work" 
                                 className={`px-6 py-2 rounded-full transition duration-300 ${
                                     location.pathname === '/Work' 
                                         ? isAtBottom ? 'bg-white text-black' : 'bg-black text-white' 
