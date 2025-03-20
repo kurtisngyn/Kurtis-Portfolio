@@ -1,4 +1,3 @@
-// About.jsx
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,11 +18,11 @@ const About = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-lavender">
       <Header />
 
-      <div className="flex-grow bg-periwinkle rounded-2xl -mt-3 -mb-10 px-4 sm:px-6 md:px-8 pt-16">
-        {/* About Section using same grid layout */}
+      {/* Content Container */}
+      <div className="flex-grow bg-periwinkle rounded-2xl px-8 sm:px-8 md:px-10 pt-16 pb-16">
         <div className="grid grid-cols-[1fr_auto] items-center mb-10">
           <h1
             data-aos="fade-right"
@@ -52,7 +51,10 @@ const About = () => {
         </div>
       </div>
 
-      <Footer />
+      {/* Footer placed outside the rounded container */}
+    
+        <Footer />
+      
     </div>
   );
 };
