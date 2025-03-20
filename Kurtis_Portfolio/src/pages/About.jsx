@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "../components/Header";
-import Abtmain from "../components/Abtmepieces/Abtmain";
 import DescriptionCard from "../components/Abtmepieces/DescriptionCard";
 import Footer from "../components/Footer";
 import ValueCard from "../components/Abtmepieces/ValueCard";
@@ -51,7 +50,6 @@ about me
 
         {/* Main Content Sections */}
         <div className="flex flex-col items-center mb-20">
-          {/* <Abtmain /> */}
           <DescriptionCard />
           <ToolCard />
           <ValueCard />
