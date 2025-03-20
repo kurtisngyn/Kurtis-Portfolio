@@ -11,14 +11,14 @@ function DescriptionCard() {
           multidisciplinary creative from Vancouver, Canada. 
           </h2>
           <div className="text-lg sm:text-xl md:text-2xl text-black font-outfit mt-[40px]">
-            <p className="mb-8">
+            <p className="mb-6">
               I continually draw inspiration from my surroundings 🫡
             </p>
-            <p className="mb-8">
-              Through experiences like hiking, traveling to new places, and exploring different hobbies, I cultivate fresh ideas and perspectives that enrich my design work.
+            <p className="mb-6">
+            Beyond design, I enjoy immersing myself in nature, music, and creative projects, whether it's capturing moments through photography, curating visuals, or working on collaborative media.
             </p>
             <p>
-              I'm passionate about crafting meaningful experiences and using design to solve problems, making a positive impact on people's lives and brightening their day. I'm always looking for opportunities to collaborate and learn from others.
+            The appreciation of art shaped my creativity and inspired me to explore how to design experiences with a purpose. 
             </p>
             
           </div>

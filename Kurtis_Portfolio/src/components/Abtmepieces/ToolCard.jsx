@@ -10,7 +10,7 @@ import Psicon from "../../assets/Abtassets/ps.svg";
 // Add all icons to the library
 library.add(fab);
 
-function Abtvalues() {
+function ToolCard() {
   const iconColor = "black";
 
   const tools = [
@@ -29,7 +29,7 @@ function Abtvalues() {
   ];
 
   return (
-    <div className="w-full py-8" data-aos="fade-right">
+    <div className="w-full mt-1 mb-8" data-aos="fade-right">
       <div className="flex w-full gap-8">
         {/* Left Side - Tools Section */}
         <div className="w-2/5 p-7 bg-white rounded-2xl">
@@ -68,17 +68,18 @@ function Abtvalues() {
         {/* Right Side - Longer Description Card */}
         <div className="w-3/5 p-7 bg-white rounded-2xl">
           <h2 className="font-outfit text-2xl sm:text-2xl md:text-4xl text-black font-bold tracking-tight mb-4">
-            values
+          design philosophy
           </h2>
           <div className="text-lg sm:text-xl md:text-2xl text-black font-outfit mt-[40px]">
-            <p className="mb-3">
-              I deeply value communication and the connections we build through shared experiences.
+  <p className="mb-5">
+  As a designer, I believe that good design is not just about aesthetics, but about creating meaningful, user-centered experiences.
+  </p>
+
+            <p className="mb-5">
+            Bringing purpose through design, crafting intuitive experiences that feel natural and engaging. While  rooted in empathy, understanding the user's needs.
             </p>
-            <p className="mb-3">
-              Whether it's through meaningful conversations, collaborating on creative projects, or simply spending time with others, I believe strong relationships are the foundation of impactful work.
-            </p>
-            <p className="mb-3">
-              I'm passionate about fostering genuine connections and using design as a tool to bring people together, solve problems, and create memorable experiences. I'm always eager to learn from others and grow through collaboration.
+            <p className="mb-4">
+            With a year of experience in automotive, retail, and hospitality, I’ve learned how to understand people’s needs and create solutions that actually make a difference.
             </p>
           </div>
         </div>
@@ -87,4 +88,4 @@ function Abtvalues() {
   );
 }
 
-export default Abtvalues;
+export default ToolCard;

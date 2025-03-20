@@ -5,8 +5,8 @@ import Header from "../components/Header";
 import Abtmain from "../components/Abtmepieces/Abtmain";
 import DescriptionCard from "../components/Abtmepieces/DescriptionCard";
 import Footer from "../components/Footer";
-import ToolSection from "../components/Abtmepieces/ToolSection";
-import Abtvalues from "../components/Abtmepieces/Abtvalues";
+import ValueCard from "../components/Abtmepieces/ValueCard";
+import ToolCard from "../components/Abtmepieces/ToolCard";
 
 const About = () => {
   useEffect(() => {
@@ -53,8 +53,8 @@ about me
         <div className="flex flex-col items-center mb-20">
           {/* <Abtmain /> */}
           <DescriptionCard />
-          <Abtvalues />
-          <ToolSection />
+          <ToolCard />
+          <ValueCard />
         </div>
       </div>
 
