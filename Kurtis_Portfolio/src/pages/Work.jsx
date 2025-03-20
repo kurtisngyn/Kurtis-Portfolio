@@ -51,11 +51,11 @@ function Work() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-lavender font-quicksand">
+    <div className="flex flex-col min-h-screen bg-lavender  font-outfit">
       <Header />
       <div className="w-full px-4 lg:px-12 mt-10">
         <h1 
-          className="font-quicksand text-black text-center mt-5 text-4xl lg:text-6xl font-bold"
+          className=" font-outfit text-black text-center mt-5 text-4xl lg:text-6xl font-bold"
           data-aos="fade-down"
         >
           My Work
