@@ -1,3 +1,4 @@
+// About.jsx
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,26 +15,22 @@ const About = () => {
       once: true,
       easing: "ease-out-cubic",
     });
-
-    // Always start at the top of the page
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col ">
-      {/* Header */}
+    <div className="min-h-screen flex flex-col">
       <Header />
 
-      {/* Main Content */}
       <div className="flex-grow bg-periwinkle rounded-2xl -mt-3 -mb-10 px-4 sm:px-6 md:px-8 pt-16">
-        {/* About Me Section */}
-        <div className="flex items-center justify-between mb-10">
-        <h1
-data-aos="fade-right"
-className="font-outfit text-4xl sm:text-5xl md:text-7 xl text-black font-bold tracking-tight"
->
-about me
-</h1>
+        {/* About Section using same grid layout */}
+        <div className="grid grid-cols-[1fr_auto] items-center mb-10">
+          <h1
+            data-aos="fade-right"
+            className="font-outfit text-4xl sm:text-5xl md:text-7xl text-black font-bold tracking-tight"
+          >
+            about me
+          </h1>
 
           <button
             onClick={() =>
@@ -42,13 +39,12 @@ about me
                 "_blank"
               )
             }
-            className="px-6 py-2 bg-black text-white font-bold text-lg rounded-lg hover:bg-gray-800 transition duration-300"
+            className="px-6 py-2 bg-black text-white font-bold text-lg rounded-lg hover:bg-gray-800 transition duration-300 whitespace-nowrap justify-self-end"
           >
             Resume
           </button>
         </div>
 
-        {/* Main Content Sections */}
         <div className="flex flex-col items-center mb-20">
           <DescriptionCard />
           <ToolCard />
@@ -56,7 +52,6 @@ about me
         </div>
       </div>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

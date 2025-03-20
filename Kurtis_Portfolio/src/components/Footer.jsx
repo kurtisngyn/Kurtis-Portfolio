@@ -1,29 +1,42 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Logopurple from "../assets/Logopurple.svg"; // Ensure the path is correct
+import Logopurple from "../assets/Logopurple.svg";
 
 const Footer = () => {
-  // Function to scroll to the top when the logo is clicked
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer className="w-full flex flex-col sm:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 py-3 sm:py-5 bg-black font-quicksand text-white text-lg rounded-t-3xl">
-      
-      {/* Email centered on mobile, left on larger screens */}
-      <a href="mailto:kurtis@email.com" className="text-white hover:underline mb-3 sm:mb-0">
-        kurtis@email.com
-      </a>
+    <footer className="w-full bg-black font-outfit text-white rounded-t-3xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      {/* Flex wrapper ensuring both sections align */}
+      <div className="flex flex-col sm:flex-row justify-between items-center w-full">
+        
+        {/* Left Section */}
+        <div className="flex flex-col self-start">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight">
+            let's chat!
+          </h2>
+          <a
+            href="mailto:kurtis@email.com"
+            className="text-2xl sm:text-2xl md:text-4xl tracking-tight hover:underline mt-2"
+          >
+            kurtis@email.com
+          </a>
+        </div>
 
-      {/* Logo centered on mobile, right on larger screens */}
-      <div className="flex items-center">
-        <img
-          src={Logopurple}
-          alt="Logo"
-          className="w-16 h-16 sm:w-32 sm:h-32 cursor-pointer"
-          onClick={scrollToTop} // Calls the scroll function when clicked
-        />
+        {/* Right Section */}
+        <div className="flex flex-col items-center sm:items-end">
+          <img
+            src={Logopurple}
+            alt="Logo"
+            className="w-16 h-16 sm:w-24 sm:h-24 cursor-pointer"
+            onClick={scrollToTop}
+          />
+          <p className="text-2xl sm:text-2xl md:text-4xl tracking-tight mt-2 sm:mt-0">
+            made in react
+          </p>
+        </div>
+
       </div>
     </footer>
   );
