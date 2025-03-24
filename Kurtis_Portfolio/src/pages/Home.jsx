@@ -41,19 +41,22 @@ const Home = () => {
 
           {/* Image Section */}
           <div className="relative flex flex-col justify-center items-center lg:w-1/2 mt-8 lg:mt-0">
-            <div className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
-              <CircleLeft />
-              <CircleRight />
-              <img
-                src={Headshot}
-                alt="Kurtis"
-                className="w-full h-full object-cover rounded-full z-10 relative"
-              />
-            </div>
-            <p className="text-center text-black font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-quicksand mt-4">
-              😽🙀😹
-            </p>
-          </div>
+  <div className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
+    <CircleLeft />
+    <CircleRight />
+    <img
+      src={Headshot}
+      alt="Kurtis"
+      className="w-full h-full object-cover rounded-full z-10 relative"
+    />
+  </div>
+  <div className="relative z-20"> {/* Add this wrapper div */}
+    <p className="text-center text-black font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-quicksand mt-4">
+      😽🙀😹
+    </p>
+  </div>
+</div>
+
         </div>
       </div>
       
