@@ -4,19 +4,25 @@ import Pose from "../../assets/Abtassets/Resultphoto.jpg";
 import Photoshoot from "../../assets/Abtassets/Photoshoot.jpg";
 import Naruto from "../../assets/Abtassets/Naruto.jpg";
 import Larrabee from "../../assets/Abtassets/Larrabee.jpg";
-import VideoFile from "../../assets/Abtassets/Hikevid.mp4"; // Video file
+import VideoFile from "../../assets/Abtassets/Hikevid.mp4";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-function ImageCarousel() {
-  const media = [
-    { type: "video", src: VideoFile, description: "diez vistas trail" },
-    { type: "image", src: Naruto, description: "learning my ninja way!" },
-    { type: "image", src: Larrabee, description: "exploring washington" },
-    { type: "image", src: Photoshoot, description: "photoshoot" },
-    { type: "image", src: Pose, description: "→ results" },
+function ImageCarousel({ videoIndex = 1 }) {
+  const mediaItems = [
+    { src: Naruto, description: "learning my ninja way!" },
+    { src: VideoFile, description: "diez vistas trail" },
+    { src: Larrabee, description: "exploring washington" },
+    { src: Photoshoot, description: "photoshoot" },
+    { src: Pose, description: "→ results" },
   ];
+
+  const media = mediaItems.map((item, index) => ({
+    type: item.src === VideoFile ? "video" : "image",
+    src: item.src,
+    description: item.description,
+  }));
 
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,12 +67,11 @@ function ImageCarousel() {
           </div>
         ))}
       </Slider>
-      {/* Always Visible Arrows and Description at the Bottom */}
       <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-between items-center px-4">
         <button onClick={goToPrev} className="text-white text-3xl cursor-pointer">
           <FaArrowLeft />
         </button>
-        <p className="text-white text-lg font-semibold text-center  px-4 py-2 rounded-lg">
+        <p className="text-white text-lg font-semibold text-center px-4 py-2 rounded-lg">
           {media[currentIndex].description}
         </p>
         <button onClick={goToNext} className="text-white text-3xl cursor-pointer">
