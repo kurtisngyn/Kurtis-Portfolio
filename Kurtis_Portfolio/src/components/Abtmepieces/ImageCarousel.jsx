@@ -9,13 +9,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-function ImageCarousel({ videoIndex = 1 }) {
+function ImageCarousel() {
   const mediaItems = [
+    { src: Photoshoot, description: "photoshoot" },
+    { src: Pose, description: "→ results" },
     { src: Naruto, description: "learning my ninja way!" },
     { src: VideoFile, description: "diez vistas trail" },
     { src: Larrabee, description: "exploring washington" },
-    { src: Photoshoot, description: "photoshoot" },
-    { src: Pose, description: "→ results" },
   ];
 
   const media = mediaItems.map((item, index) => ({
