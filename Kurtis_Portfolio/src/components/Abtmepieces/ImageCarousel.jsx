@@ -14,8 +14,8 @@ function ImageCarousel() {
     { src: Photoshoot, description: "photoshoot" },
     { src: Pose, description: "→ results" },
     { src: Naruto, description: "learning my ninja way!" },
-    { src: VideoFile, description: "diez vistas trail" },
     { src: Larrabee, description: "exploring washington" },
+    { src: VideoFile, description: "diez vistas trail" },
   ];
 
   const media = mediaItems.map((item, index) => ({
