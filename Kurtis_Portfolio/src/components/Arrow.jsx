@@ -1,27 +1,24 @@
-// src/components/Arrow.jsx
-
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
 
 const Arrow = () => {
   useEffect(() => {
     // GSAP animation for the arrow
-    gsap.to('.scroll-arrow', {
+    gsap.to(".scroll-arrow", {
       y: 20,
       repeat: -1,
       yoyo: true,
       duration: 1,
-      ease: 'power2.inOut',
+      ease: "power2.inOut",
     });
   }, []);
 
   // Function to handle scrolling
   const handleScroll = () => {
-    // Scrolls smoothly to the next section
-    window.scrollTo({
-      top: window.innerHeight, // Scrolls down by one viewport height
-      behavior: 'smooth',
-    });
+    const section = document.getElementById("recent-projects"); // Find the Recent Projects section
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" }); // Scroll smoothly to it
+    }
   };
 
   return (

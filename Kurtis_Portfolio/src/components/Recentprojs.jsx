@@ -9,12 +9,14 @@ function RecentProjs() {
       duration: 1200, // Animation duration in milliseconds
       once: true,     // Animation should happen only once
     });
-    // When opening a new page, always start at the top
-    window.scrollTo(0, 0);
+    // Ensure the page does not auto-scroll to the top on render
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-lavender font-quicksand">
+    <div 
+      id="recent-projects"  // Add this ID to fix the arrow scroll issue
+      className="flex flex-col min-h-screen bg-lavender font-quicksand"
+    >
       <div className="w-full px-4 sm:px-6 lg:px-8 mt-10">
         <h1 
           className="font-sans text-black tracking-tight text-center mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold"
@@ -28,7 +30,7 @@ function RecentProjs() {
         >
           Explore my featured projects.
         </p>
-        <Projectcards  />
+        <Projectcards />
       </div>
     </div>
   );
