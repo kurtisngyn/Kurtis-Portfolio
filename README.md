@@ -6,7 +6,7 @@ To run the Project,
 
 1. cd into Term-project
 
-2. cd into Food-products
+2. cd into Kurtis_Portfolio
 
 3. npm install in the CLI
 
