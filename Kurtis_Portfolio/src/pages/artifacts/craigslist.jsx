@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import Craigslistphoto from "../../assets/craiglistphotos/craigslistphoto.png";
 import CraigslistHeader from "../../components/Craigslistpieces/Craigslist-header";
@@ -7,6 +7,11 @@ import Craigslistselect from "../../components/Craigslistpieces/Craigslist-selec
 import Footer from "../../components/Footer";
 
 function Craigslist() {
+    // Ensure the page scrolls to the top on mount
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="flex flex-col min-h-screen bg-lavender">
             <Header />

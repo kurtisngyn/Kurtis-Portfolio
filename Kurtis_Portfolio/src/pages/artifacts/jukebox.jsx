@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import JukeboxHeader from "../../components/Jukeboxpieces/Juke-header";
 import Jukeboxphoto from "../../assets/Jukeboxphotos/Jukeboxphoto.jpg";
@@ -7,6 +7,10 @@ import Jukeselect from "../../components/Jukeboxpieces/Juke-selection";
 import Footer from "../../components/Footer";
 
 function Jukebox() {
+    useEffect(() => {
+            window.scrollTo(0, 0);
+        }, []);
+
     return (
         <div className="flex flex-col min-h-screen bg-lavender">
             <Header />

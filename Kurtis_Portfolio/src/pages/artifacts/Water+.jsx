@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import WaterHeader from "../../components/Waterpieces/Water-header";
 import Waterphoto from "../../assets/waterphotos/waterphoto.jpg";
@@ -7,6 +7,10 @@ import Waterselect from "../../components/Waterpieces/Water-selection";
 import Footer from "../../components/Footer";
 
 function Waterplus() {
+    useEffect(() => {
+                    window.scrollTo(0, 0);
+                }, []);
+
     return (
         <div className="flex flex-col min-h-screen bg-lavender">
             <Header />
