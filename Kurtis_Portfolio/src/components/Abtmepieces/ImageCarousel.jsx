@@ -5,7 +5,7 @@ import Photoshoot from "../../assets/Abtassets/Photoshoot.jpg";
 import Naruto from "../../assets/Abtassets/Naruto.jpg";
 import Larrabee from "../../assets/Abtassets/Larrabee.jpg";
 import VideoFile from "../../assets/Abtassets/Hikevid.mp4";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
