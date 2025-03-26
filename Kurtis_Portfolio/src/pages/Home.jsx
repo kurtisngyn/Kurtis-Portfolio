@@ -50,11 +50,11 @@ const Home = () => {
 
       {/* Main content */}
       <div className="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto gap-8 py-8 lg:py-16 items-center lg:items-start">
+        <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto gap-8 py-8 lg:py-16 items-center">
           {/* Intro Section */}
-          <div className="flex flex-col justify-center lg:w-1/2 text-center lg:text-left">
+          <div className="flex flex-col justify-center w-full lg:w-1/2 text-center lg:text-left">
             <header>
-              <h1 className="font-quicksand text-black text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6">
+              <h1 className="font-quicksand text-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6">
                 Hey, I'm <span className="text-periwinkle-500 drop-shadow-lg">Kurtis</span>
               </h1>
             </header>
@@ -87,10 +87,10 @@ const Home = () => {
           </div>
 
           {/* Image Section */}
-          <div className="relative flex flex-col justify-center items-center lg:w-1/2 mt-8 lg:mt-0">
-            <div className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
-              <CircleLeft />
-              <CircleRight />
+          <div className="relative flex flex-col justify-center items-center w-full lg:w-1/2 mt-8 lg:mt-0">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <CircleLeft className="absolute inset-0 w-full h-full" />
+              <CircleRight className="absolute inset-0 w-full h-full" />
               <img
                 ref={imageRef}
                 src={Headshot}
@@ -108,7 +108,11 @@ const Home = () => {
         </div>
       </div>
 
-      <Arrow />
+      <div className="mb-16 md:mb-0">
+  <Arrow />
+</div>
+
+
       <Recentprojs />
       <Footer />
     </div>

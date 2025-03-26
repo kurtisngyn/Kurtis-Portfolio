@@ -42,7 +42,7 @@ const Layout = () => {
                             <Link 
                                 to="/about" 
                                 className={`px-6 py-2 rounded-full transition duration-300 ${
-                                    location.pathname === '/About' 
+                                    location.pathname === '/about' 
                                         ? isAtBottom ? 'bg-white text-black' : 'bg-black text-white' 
                                         : isAtBottom ? 'text-white hover:bg-white hover:text-black' : 'text-black hover:bg-black hover:text-white'
                                 }`}
@@ -54,7 +54,7 @@ const Layout = () => {
                             <Link 
                                 to="/work" 
                                 className={`px-6 py-2 rounded-full transition duration-300 ${
-                                    location.pathname === '/Work' 
+                                    location.pathname === '/work' 
                                         ? isAtBottom ? 'bg-white text-black' : 'bg-black text-white' 
                                         : isAtBottom ? 'text-white hover:bg-white hover:text-black' : 'text-black hover:bg-black hover:text-white'
                                 }`}
