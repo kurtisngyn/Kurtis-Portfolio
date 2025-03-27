@@ -42,7 +42,7 @@ const Footer = () => {
                 alt="LinkedIn profile"
               />
             </a>
-            <a href="https://www.behance.net" target="_blank" rel="noreferrer">
+            <a href="https://www.behance.net/kurtisnguyen" target="_blank" rel="noreferrer">
               <FontAwesomeIcon 
                 icon={faSquareBehance} 
                 className="text-2xl sm:text-3xl text-white hover:text-periwinkle-500 transition-transform duration-300 transform hover:scale-110" 

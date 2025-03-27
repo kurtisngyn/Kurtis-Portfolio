@@ -31,8 +31,8 @@ const CircleRight = () => {
       className="absolute w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-60 lg:h-60 xl:w-64 xl:h-64 bg-periwinkle-500 rounded-full"
       style={{ 
         zIndex: 1, // Ensure it's behind the image
-        right: "-8%", // Adjust right positioning
-        top: "50%", // Center vertically
+        right: "-9%", // Adjust right positioning
+        top: "60%", // Center vertically
         transform: "translateY(-50%)" // Adjust for vertical centering
       }}
     />

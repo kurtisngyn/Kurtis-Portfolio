@@ -66,7 +66,7 @@ const Home = () => {
                   alt="LinkedIn profile"
                 />
               </a>
-              <a href="https://www.behance.net" target="_blank" rel="noreferrer">
+              <a href="https://www.behance.net/kurtisnguyen" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon 
                   icon={faSquareBehance} 
                   className="text-3xl sm:text-4xl lg:text-5xl text-gray-800 hover:text-periwinkle-500 transition-transform duration-300 transform hover:scale-110" 
