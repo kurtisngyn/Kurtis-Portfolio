@@ -9,14 +9,14 @@ const CircleRight = () => {
     gsap.fromTo(
       circleRef.current,
       {
-        x: "80%", // Start further to the right
-        y: "-20%", // Start from above
+        x: "50%", // Start further to the right
+        y: "-50%", // Start from above
         scale: 0.5,
         opacity: 0.3, 
       },
       {
         x: "25%", 
-        y: "0%", 
+        y: "-30%", 
         opacity: 1, // make full transparent at the end
         scale: 1,
         duration: 4,
