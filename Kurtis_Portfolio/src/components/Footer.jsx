@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-black font-outfit text-white rounded-t-3xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 mt-[-26px] pb-32 md:pb-24"> {/* Added pb-32 for mobile and md:pb-24 for larger screens */}
+    <footer className="w-full bg-black  font-outfit text-white rounded-t-3xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 mt-[-26px] pb-32 md:pb-24">
       {/* Flex wrapper ensuring both sections align */}
       <div className="flex flex-col md:flex-row justify-between items-center w-full">
         
@@ -57,12 +57,19 @@ const Footer = () => {
               />
             </a>
           </div>
-          <p className="text-2xl sm:text-2xl md:text-4xl tracking-tight mt-4 text-center md:text-right relative z-10"> {/* Added relative and z-10 */}
-            made in react
-          </p>
         </div>
       </div>
-      <div className="h-[10px] md:h-0"></div>
+      
+      {/* Bottom section with "made in react" and small text */}
+      <div className="flex flex-col md:flex-row justify-between items-center mt-8 text-white">
+        <p className="text-2xl sm:text-2xl md:text-4xl tracking-tight text-center md:text-left mb-4 md:mb-0">
+          made with <span className="text-periwinkle-500">React</span>
+        </p>
+        <div className="text-xs text-center md:text-right">
+          <p>designed & developed by Kurtis Nguyen</p>
+          <p>&copy; 2025 All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
   );
 };

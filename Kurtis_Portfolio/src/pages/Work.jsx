@@ -1,118 +1,69 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Header from "../components/Header"; 
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 import Mockupcraiglist from "../assets/mockupcraiglist.jpg";
 import MockupJukebox from "../assets/MockupJukebox.jpg";
 import MockupPlateful from "../assets/mockupplateful.jpg";
 import MockupWaterplus from "../assets/mockupwaterplus.jpg";
-import { Link } from 'react-router-dom';
-import Footer from "../components/Footer";
 
 function Work() {
   useEffect(() => {
-    AOS.init({
-      duration: 1200, // Animation duration in milliseconds
-      once: true,     // Animation should happen only once
-    });
-    // When opening a new page always start at the top
-    window.scrollTo(0, 0); 
+    AOS.init({ duration: 1200, once: true });
+    window.scrollTo(0, 0);
   }, []);
 
   const projects = [
-    {
-      label: "Craigslist",
-      title: "Website Redesign",
-      description: "The Craigslist project is to create a redesigned product that corrects the understanding of having modern UI/UX standards using user research and Figma mockup prototyping",
-      imageUrl: Mockupcraiglist,
-      path: "/artifacts/craigslist"
-    },
-    {
-      label: "Jukebox", 
-      title: "Hypothetical App Launch",
-      description: "The Jukebox project is a conceptual app for a karaoke music streaming platform, offering a user-friendly experience and a visually attractive design through functionality. As a team using Waterfall methodology we create assets for an App launch.",
-      imageUrl: MockupJukebox,
-      path: "/artifacts/jukebox"
-    },
-    {
-      label: "Plateful!",
-      title: "App Design",
-      description: "Plateful is a new app focused on ordering food catering services. Unlike food delivery apps, it targets bigger event hosts directly with caterers for easy ordering. The catering businesses can showcase their menus and manage orders efficiently.",
-      imageUrl: MockupPlateful,
-      path: "/artifacts/plateful"
-    },
-    {
-      label: "Water+",
-      title: "Hypothetical App Launch",
-      description: "Project Water+ is a crowdsourced platform that lets you find and track quality drinking water refill stations wherever you are. This project not only aims to tackle a real-world problem but also serves as a UI/UX design initiative, focusing on creating an intuitive and user-friendly experience. From seamless navigation to visually engaging interfaces, the app prioritizes accessibility and ease of use to ensure users can quickly locate reliable water refill stations.",
-      imageUrl: MockupWaterplus,
-      path: "/artifacts/waterplus"
-    },
+    { label: "Craigslist", title: "Website Redesign", imageUrl: Mockupcraiglist, path: "/artifacts/craigslist", bgColor: "bg-blue-500" },
+    { label: "Jukebox", title: "Hypothetical App Launch", imageUrl: MockupJukebox, path: "/artifacts/jukebox", bgColor: "bg-orange-500" },
+    { label: "Plateful!", title: "App Design", imageUrl: MockupPlateful, path: "/artifacts/plateful", bgColor: "bg-green-500" },
+    { label: "Water+", title: "Hypothetical App Launch", imageUrl: MockupWaterplus, path: "/artifacts/waterplus", bgColor: "bg-teal-500" },
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-lavender  font-outfit">
+    <div className="flex flex-col min-h-screen bg-gray-100">
       <Header />
-      <div className="w-full px-4 lg:px-12 mt-10">
-        <h1 
-          className=" font-outfit text-black text-center mt-5 text-4xl lg:text-6xl font-bold"
-          data-aos="fade-down"
-        >
-          My Work
-        </h1>
-        <p 
-          className="font-quicksand text-black text-center mt-4 text-xl max-w-3xl mx-auto"
-          data-aos="fade-down"
-        >
-          Here's a showcase of my projects and designs. Each piece represents my skills in UX/UI design and front-end development.
-        </p>
-      </div>
+      <div className="relative flex-grow">
+        {/* White background with rounded corners - updated for mobile */}
+        <div className="absolute inset-x-0 top-0 sm:top-[-1rem] bottom-0 bg-white rounded-t-3xl sm:rounded-t-3xl z-10"></div>
+        
+        {/* Content */}
+        <div className="relative z-20 px-4 lg:px-20 xl:px-32 pt-16 pb-16">
+          <div className="text-center mb-12">
+            <h1 className="text-black text-4xl lg:text-6xl font-bold" data-aos="fade-down">My Work</h1>
+            <p className="text-black text-xl max-w-3xl mx-auto mt-4" data-aos="fade-down">A showcase of my UX/UI and front-end projects.</p>
+          </div>
 
-      <div className="flex-grow flex flex-col items-center text-black justify-start px-4 lg:px-12 mt-10">
-      {projects.map((project, index) => (
-  <div 
-    key={index} 
-    className={`flex flex-col md:flex-row w-full max-w-6xl mb-20 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
-    data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
-  >
-    <div 
-      className="md:w-1/2 p-6" 
-      data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-    >
-      {/* Content */}
-      {project.label && (
-        <span className="bg-black text-white py-2 px-6 rounded-full text-sm font-bold tracking-wider shadow-md uppercase mb-4 inline-block">
-          {project.label}
-        </span>
-      )}
-      <h2 className=" font-quicksand text-3xl text-black font-semibold mb-4">{project.title}</h2>
-      <p className="font-quicksand text-lg mb-4">{project.description}</p>
-      <Link 
-        to={project.path} 
-        className="font-quicksand inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-periwinkle-500 transition-colors"
-      >
-        View Project
-      </Link>
-    </div>
-    <div 
-      className="md:w-1/2" 
-      data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
-    >
-      
-       {/* <StaticCircle /> */}
-       {/* <StaticCircle /> */}
-      <img 
-        src={project.imageUrl} 
-        alt={project.title} 
-        className="w-full h-full object-cover rounded-lg shadow-md" 
-      />
-    </div>
-  </div>
-))}
+          {/* GRID CONTAINER */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+            {projects.map((project, index) => (
+              <Link 
+                to={project.path} 
+                key={index} 
+                className={`relative overflow-hidden rounded-xl p-6 shadow-lg transition-transform transform hover:scale-105 ${project.bgColor}`}
+                data-aos="fade-up"
+              >
+                <img 
+                  src={project.imageUrl} 
+                  alt={project.title} 
+                  className="absolute inset-0 w-full h-full object-cover opacity-30" 
+                />
+                <div className="relative z-10 flex flex-col justify-center text-left text-white p-6">
+                  <h2 className="text-3xl font-bold">{project.label}</h2>
+                  <p className="text-lg mt-2">{project.title}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
-      <Footer />
+      <div className="mt-20 z-10">
+        <Footer />
+      </div>
     </div>
   );
-};
+}
 
 export default Work;

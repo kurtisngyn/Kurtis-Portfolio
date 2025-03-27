@@ -22,7 +22,7 @@ const About = () => {
       <Header />
 
       {/* Content Container */}
-      <div className="flex-grow bg-periwinkle rounded-2xl px-8 sm:px-8 md:px-10 pt-16 pb-16">
+      <div className="flex-grow bg-periwinkle rounded-t-3xl px-8 sm:px-8 md:px-10 pt-16 pb-16">
         <div className="grid grid-cols-[1fr_auto] items-center mb-10">
           <h1
             data-aos="fade-right"
