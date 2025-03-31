@@ -26,7 +26,7 @@ function PlatefulOverview() {
                     <div data-aos="fade-down" data-aos-delay="200">
                         <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">The Problem</h2>
                         <p className="text-lg sm:text-xl md:text-xl lg:text-2xl text-black font-outfit">
-                            Food delivery apps are not designed to handle large orders efficiently. They create unpredictable rushes in restaurants, straining operations and service quality. Without specialized features for bulk orders, these platforms cause more issues than they solve.
+                            Food delivery apps are not designed to handle large orders efficiently.  They create unpredictable rushes in restaurants, straining operations and service quality. Without specialized features for bulk orders, these platforms cause more issues than they solve.
                         </p>
                     </div>
 

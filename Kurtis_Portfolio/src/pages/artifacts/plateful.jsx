@@ -2,6 +2,10 @@ import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PlatefulOverview from "../../components/Platefulpieces/Overview";
+import PlatefulResearch from "../../components/Platefulpieces/Research";
+import PlatefulDiscovery from "../../components/Platefulpieces/Discovery";
+import PlatefulWireframes from "../../components/Platefulpieces/Wireframes";
+import Platefulproduct from "../../assets/platefulphotos/platefulproduct.png";
 
 function Plateful() {
   useEffect(() => {
@@ -17,7 +21,7 @@ function Plateful() {
         {/* Image and Project Details Section */}
         <div className="relative mb-20">
           <img 
-            src="https://placehold.co/600x400" 
+            src={Platefulproduct}
             alt="Plateful Placeholder" 
             className="w-full h-[800px] object-cover rounded-2xl mb-10" 
           />
@@ -35,14 +39,17 @@ function Plateful() {
         </div>
 
         {/* Description Section */}
-        <div className="text-left pl-4 mb-10">
+        <div className="text-left  mb-10">
           <h2 className="font-outfit text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-4">
-            Customizable menus, flexible scheduling, seamless bulk order management, and integrated payment systems
+            Customizable menus, flexible scheduling, seamless bulk ordering
           </h2>
         </div>
 
         {/* Plateful Overview Component */}
         <PlatefulOverview />
+        <PlatefulDiscovery />
+        <PlatefulResearch />
+        <PlatefulWireframes />
       </div>
       
       {/* Footer Section */}
