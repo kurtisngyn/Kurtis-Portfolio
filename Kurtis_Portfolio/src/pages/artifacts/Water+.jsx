@@ -1,35 +1,52 @@
 import React, { useEffect } from "react";
 import Header from "../../components/Header";
-import WaterHeader from "../../components/Waterpieces/Water-header";
-import Waterphoto from "../../assets/waterphotos/waterphoto.jpg";
-import WaterOverview from "../../components/Waterpieces/Water-overview";
-import Waterselect from "../../components/Waterpieces/Water-selection";
 import Footer from "../../components/Footer";
+import WaterOverview from "../../components/Waterpieces/Water-overview";
+import Waterphoto from "../../assets/waterphotos/waterphoto.jpg";
 
 function Waterplus() {
     useEffect(() => {
-                    window.scrollTo(0, 0);
-                }, []);
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
-        <div className="flex flex-col min-h-screen bg-lavender">
+        <div className="min-h-screen flex flex-col bg-lavender">
             <Header />
-            <div className="bg-lavender py-12">
-                <div className="container mx-auto px-4">
-                    <WaterHeader />
-                    <div className="mt-10 mb-4">
-                        <div className="bg-white rounded-lg shadow-md w-full max-w-8xl h-auto relative">
-                            <img 
-                                src={Waterphoto} 
-                                alt="Water+ Photo" 
-                                className="w-full h-auto rounded-lg"
-                            />
+
+            {/* Content Container */}
+            <div className="flex-grow bg-periwinkle rounded-2xl px-8 sm:px-8 md:px-10 pt-16 pb-16">
+                {/* Image and Project Details Section */}
+                <div className="relative mb-20">
+                    <img 
+                        src={Waterphoto}
+                        alt="Water+ Placeholder" 
+                        className="w-full h-[800px] object-cover rounded-2xl mb-10" 
+                    />
+                    <div className="absolute bottom-4 left-4 text-left">
+                        <h1 className="font-outfit text-6xl sm:text-7xl md:text-8xl text-black font-bold tracking-tight mb-4">
+                            Water+
+                        </h1>
+                        <div className="text-xl md:text-2xl text-black">
+                            <p className="mb-2"><strong>Role:</strong> Project Lead</p>
+                            <p className="mb-2"><strong>Date:</strong> March 2025</p>
+                            <p className="mb-2"><strong>Duration:</strong> 3 months</p>
+                            <p className="mb-2"><strong>Tools:</strong> Figma</p>
                         </div>
                     </div>
                 </div>
+
+                {/* Description Section */}
+                <div className="text-left mb-10">
+                    <h2 className="font-outfit text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-4">
+                        Water source mapping & community engagement
+                    </h2>
+                </div>
+
+                {/* Water+ Overview Component */}
                 <WaterOverview />
-                <Waterselect />
             </div>
+            
+            {/* Footer Section */}
             <Footer />
         </div>
     );
