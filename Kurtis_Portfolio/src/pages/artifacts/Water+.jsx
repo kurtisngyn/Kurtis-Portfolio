@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import WaterOverview from "../../components/Waterpieces/Water-overview";
 import Waterphoto from "../../assets/waterphotos/waterphoto.jpg";
-
+import WaterResearch from "../../components/Waterpieces/Water-research";
 function Waterplus() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -44,6 +44,7 @@ function Waterplus() {
 
                 {/* Water+ Overview Component */}
                 <WaterOverview />
+                <WaterResearch />
             </div>
             
             {/* Footer Section */}
