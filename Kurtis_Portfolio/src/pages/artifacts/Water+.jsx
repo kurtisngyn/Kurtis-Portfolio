@@ -4,6 +4,8 @@ import Footer from "../../components/Footer";
 import WaterOverview from "../../components/Waterpieces/Water-overview";
 import Waterphoto from "../../assets/waterphotos/waterphoto.jpg";
 import WaterResearch from "../../components/Waterpieces/Water-research";
+import Waterprimitives from "../../components/Waterpieces/Water-prim";
+import Watermockup from "../../components/Waterpieces/Water-mockup";
 function Waterplus() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -45,6 +47,8 @@ function Waterplus() {
                 {/* Water+ Overview Component */}
                 <WaterOverview />
                 <WaterResearch />
+                <Waterprimitives />
+                <Watermockup />
             </div>
             
             {/* Footer Section */}

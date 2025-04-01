@@ -56,15 +56,19 @@ function Waterresearch() {
                  <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-12">
                      <div className="w-full md:w-1/2">
                          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
-                             Empathy Mapping
+                             User Journey Mapping
                          </h2>
                          <p className="text-lg sm:text-xl md:text-xl lg:text-2xl text-black font-outfit mb-6">
-                         A empathy map is a visual tool that helps teams understand the needs, feelings, and motivations of their users, helping identify pain points and opportunities for improvement. I created an empathy map to gain a deeper understanding of the users' needs and to inform the design process.
+                         User journey mapping visually outlines a user's interaction with a product or service, showing their steps, feelings, and pain points. It helps businesses understand from a user perspective their intentions and feelings when interacting with the app.
                  </p>
                      </div>
-                     <img src={userjourney} alt="Persona" className="w-full md:w-1/2 rounded-2xl h-auto" />
+                     <img src={userjourney} alt="User Journey" className="w-full md:w-1/2 rounded-2xl h-auto" />
                  </div>
-        </div>
+                </div>
+
+        
+        
+        
     );
 }
 
