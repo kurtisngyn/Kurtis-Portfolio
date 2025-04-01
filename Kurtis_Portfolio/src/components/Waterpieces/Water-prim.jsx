@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 import textstyles from "../../assets/waterphotos/Textstyles.png";
 import colours from "../../assets/waterphotos/colors.png";
-import uicomponents from "../../assets/waterphotos/uicomponent.png";
+import uicomponents from "../../assets/waterphotos/Uicomponent.png";
 
 function Waterprimitives() {
     useEffect(() => {
