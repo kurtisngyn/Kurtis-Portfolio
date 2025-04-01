@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import designassets from "../../assets/platefulphotos/designassets.png";
 
-function PlatefulWireframes() {
+function PlatefulPrimitives() {
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -14,7 +14,7 @@ function PlatefulWireframes() {
     return (
          <div className="text-left pl-4 mt-10 mb-10">
                     <h2 className="font-outfit text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-4">
-                        Wireframes
+                    Primitives
                     </h2>
                     <h3 className="font-outfit text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium mb-6">
                        Creating the look & feel of the app to ensure a seamless user experience.
@@ -27,4 +27,4 @@ function PlatefulWireframes() {
     );
 }
 
-export default PlatefulWireframes;
+export default PlatefulPrimitives;

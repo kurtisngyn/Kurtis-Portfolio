@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import PlatefulOverview from "../../components/Platefulpieces/Overview";
 import PlatefulResearch from "../../components/Platefulpieces/Research";
 import PlatefulDiscovery from "../../components/Platefulpieces/Discovery";
-import PlatefulWireframes from "../../components/Platefulpieces/Wireframes";
+import PlatefulPrimitives from "../../components/Platefulpieces/Primitives";
 import Platefulproduct from "../../assets/platefulphotos/platefulproduct.png";
 
 function Plateful() {
@@ -49,7 +49,7 @@ function Plateful() {
         <PlatefulOverview />
         <PlatefulDiscovery />
         <PlatefulResearch />
-        <PlatefulWireframes />
+        <PlatefulPrimitives />
       </div>
       
       {/* Footer Section */}
