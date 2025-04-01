@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import textstyles from "../../assets/waterphotos/textstyles.png";
+import textstyles from "../../assets/waterphotos/Textstyles.png";
 import colours from "../../assets/waterphotos/colours.png";
 import uicomponents from "../../assets/waterphotos/uicomponents.png";
 
