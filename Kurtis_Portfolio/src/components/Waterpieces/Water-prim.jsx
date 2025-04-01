@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import textstyles from "../../assets/waterphotos/Textstyles.png";
-import colours from "../../assets/waterphotos/Colours.png";
+import colours from "../../assets/waterphotos/colors.png";
 import uicomponents from "../../assets/waterphotos/uicomponents.png";
 
 function Waterprimitives() {
