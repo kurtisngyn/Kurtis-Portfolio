@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import proposedsolution from "../../assets/waterphotos/proposedsolution.jpg";
 import userjourney from "../../assets/waterphotos/userjourney.jpg";
+import userpersona from "../../assets/waterphotos/UXPersona.png";
 
 function Waterresearch() {
     useEffect(() => {
@@ -48,7 +49,7 @@ function Waterresearch() {
                          A user persona is a fictional character that represents a specific segment of your target audience. To helps understand the needs, goals, and behaviors of your users. I created a user persona to guide the design process and ensure that the app meets the needs of its users.
                  </p>
                      </div>
-                     <img src="https://placehold.co/600x400" alt="Empathy Mapping" className="w-full md:w-1/2 rounded-2xl h-auto" />
+                     <img src={userpersona} alt="Empathy Mapping" className="w-full md:w-1/2 rounded-2xl h-auto" />
                  </div>
      
                  {/* Image Left - Text Right */}
