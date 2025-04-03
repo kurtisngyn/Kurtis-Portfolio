@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import MockupJukebox from "../assets/MockupJukebox.jpg";
 import MockupWaterplus from "../assets/mockupwaterplus.jpg";
+import Platefulproduct from "../assets/platefulphotos/platefulproduct.png";
 
 function Projectcards() {
   useEffect(() => {
@@ -20,11 +21,11 @@ function Projectcards() {
       path: "/artifacts/waterplus",
     },
     {
-      title: "JukeBox",
-      description: "Music & karaoke streaming app",
-      linkText: "A mobile app prototype for music lovers with user research insights",
-      imageUrl: MockupJukebox,
-      path: "/artifacts/jukebox",
+      title: "Plateful!",
+      description: "A Catering Ordering App",
+      linkText: "A mobile app to solve the divide between the resturant industry",
+      imageUrl: Platefulproduct,
+      path: "/artifacts/plateful",
     },
   ];
 
