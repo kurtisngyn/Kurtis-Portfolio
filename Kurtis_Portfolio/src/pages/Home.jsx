@@ -7,7 +7,7 @@ import CircleRight from "../components/Circle-Right";
 import Arrow from "../components/Arrow";
 import Recentprojs from "../components/Recentprojs";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faSquareBehance, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faSquareBehance, faSquareGithub, faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -55,7 +55,7 @@ const Home = () => {
           <div className="flex flex-col justify-center w-full lg:w-1/2 text-center lg:text-left">
             <header>
               <h1 className="font-quicksand text-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6">
-                Hey, I'm <span className="text-periwinkle-500 drop-shadow-lg">Kurtis</span>
+                Hey, I'm <span className="text-periwinkle-500 ">Kurtis</span>
               </h1>
             </header>
             <div className="flex justify-center lg:justify-start gap-4 mb-4 sm:mb-6">
@@ -66,18 +66,18 @@ const Home = () => {
                   alt="LinkedIn profile"
                 />
               </a>
-              <a href="https://www.behance.net/kurtisnguyen" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon 
-                  icon={faSquareBehance} 
-                  className="text-3xl sm:text-4xl lg:text-5xl text-gray-800 hover:text-periwinkle-500 transition-transform duration-300 transform hover:scale-110" 
-                  alt="Behance profile"
-                />
-              </a>
               <a href="https://github.com/kurtisngyn" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon 
                   icon={faSquareGithub} 
                   className="text-3xl sm:text-4xl lg:text-5xl text-gray-800 hover:text-periwinkle-500 transition-transform duration-300 transform hover:scale-110" 
                   alt="GitHub profile"
+                />
+              </a>
+              <a href="https://www.instagram.com/kurtisngyn/" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon 
+                  icon={faSquareInstagram} 
+                  className="text-3xl sm:text-4xl lg:text-5xl text-gray-800 hover:text-periwinkle-500 transition-transform duration-300 transform hover:scale-110" 
+                  alt="Behance profile"
                 />
               </a>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Logopurple from "../assets/Logopurple.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faSquareBehance, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faSquareGithub, faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -42,18 +42,20 @@ const Footer = () => {
                 alt="LinkedIn profile"
               />
             </a>
-            <a href="https://www.behance.net/kurtisnguyen" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon 
-                icon={faSquareBehance} 
-                className="text-2xl sm:text-3xl text-white hover:text-periwinkle-500 transition-transform duration-300 transform hover:scale-110" 
-                alt="Behance profile"
-              />
-            </a>
+            
             <a href="https://github.com/kurtisngyn" target="_blank" rel="noreferrer">
               <FontAwesomeIcon 
                 icon={faSquareGithub} 
                 className="text-2xl sm:text-3xl text-white hover:text-periwinkle-500 transition-transform duration-300 transform hover:scale-110" 
                 alt="GitHub profile"
+              />
+            </a>
+
+            <a href="https://www.instagram.com/kurtisngyn/" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon 
+                icon={faSquareInstagram} 
+                className="text-2xl sm:text-3xl text-white hover:text-periwinkle-500 transition-transform duration-300 transform hover:scale-110" 
+                alt="Instagram profile"
               />
             </a>
           </div>
