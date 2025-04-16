@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import bg from "../../assets/waterphotos/bgcard.png";
+import bg2 from "../../assets/waterphotos/bgcard2.png";
 
 function WaterDiscovery() {
     useEffect(() => {
@@ -21,52 +23,77 @@ function WaterDiscovery() {
                     Discovering the root causes of community problems is crucial, as it's the drive to implement constructive solutions.
                 </h3>
                 <p className="text-lg sm:text-xl md:text-xl lg:text-2xl text-black font-outfit leading-relaxed">
-                    This process begins with curiosity, leading to deeper insights and innovative ideas. Ultimately, this exploration results in a thoughtful proposal that addresses the core issues and fosters meaningful change.
+                    This process begins with curiosity, leading to solutions as innovative ideas. Ultimately, this exploration results in a thoughtful proposal that addresses the core issues for meaningful change.
                 </p>
             </div>
 
             {/* Discovery Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 auto-rows-auto">
+
                 {/* Top Left: Wider */}
-                <div className="bg-white rounded-2xl p-10 shadow-md lg:col-span-2" data-aos="fade-down">
-                    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
-                        Proposing a Solution
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
-                    Imagine a world wide app that connects individuals with the simple need of find quality water.
-                    Together, they can locate water stations and keep an eye on water quality, all while teaching waste management and recycling tips.
-                    </p>
-                </div>
+<div
+    className="bg-white rounded-2xl p-10 shadow-md lg:col-span-2 bg-no-repeat bg-center bg-cover
+"
+    data-aos="fade-down"
+    style={{ backgroundImage: `url(${bg})` }}
+>
+    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
+        Problem Statement
+    </h2>
+    <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
+    How might we create a vibrant community platform that opens the tap 
 
-                {/* Top Right: Regular */}
-                <div className="bg-white rounded-2xl p-10 shadow-md" data-aos="fade-down" data-aos-delay="200">
-                    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
-                    Audience
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
-                        Our research involved speaking to residents, municipal workers, and nonprofit organizations to uncover their pain points. Access inconsistency, lack of data, and no digital tools for reporting or planning were common themes.
-                    </p>
-                </div>
+to  showcase clean water stations, teaches sustainable habits, and reduces plastic 
 
-                {/* Bottom Left: Smaller */}
-                <div className="bg-white rounded-2xl p-10 shadow-md" data-aos="fade-down" data-aos-delay="400">
-                    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
-                        Root Issues
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
-                        Inadequate infrastructure, unclear reporting channels, and outdated maps made it difficult for communities to advocate for improved water access.
-                    </p>
-                </div>
+pollution? 
+    </p>
+</div>
 
-                {/* Bottom Right: Wider */}
-                <div className="bg-white rounded-2xl p-10 shadow-md lg:col-span-2" data-aos="fade-down" data-aos-delay="600">
-                    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
-                        Opportunity to Innovate
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
-                        These insights helped shape our solution: a tool that empowers users to map water sources, report outages, and engage directly with their local infrastructure — giving data back to the people who need it most.
-                    </p>
-                </div>
+{/* Top Right: Regular */}
+<div
+    className="bg-white rounded-2xl p-10 shadow-md bg-no-repeat bg-center bg-cover"
+    data-aos="fade-down"
+    data-aos-delay="200"
+    style={{ backgroundImage: `url(${bg})` }}
+>
+    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
+        Audience
+    </h2>
+    <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
+       <ul>Eco-Conscious Consumers</ul><ul>Travelers and Commuters</ul><ul>Urban Residents</ul><ul>Students</ul>
+    </p>
+</div>
+
+{/* Bottom Left: Smaller */}
+<div
+    className="bg-white rounded-2xl p-10 shadow-md bg-no-repeat bg-center bg-cover"
+    data-aos="fade-down"
+    data-aos-delay="400"
+    style={{ backgroundImage: `url(${bg2})` }}
+>
+    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
+        Root Issues
+    </h2>
+    <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
+        <ul>Community driven based </ul> <ul>Unclear Reporting Channels </ul> <ul>Lack of Real-Time Data</ul>
+    </p>
+</div>
+
+{/* Bottom Right: Wider */}
+<div
+    className="bg-white rounded-2xl p-10 shadow-md lg:col-span-2 bg-no-repeat bg-center bg-cover"
+    data-aos="fade-down"
+    data-aos-delay="600"
+    style={{ backgroundImage: `url(${bg})` }}
+>
+    <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
+        Opportunity to Innovate
+    </h2>
+    <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
+        To design a solution that not only maps local water sources in real-time but also lets individuals to report issues, share resources, and collaborate on sustainable practices. By giving the public intuitive, data-driven tools, we can bridge the gap between community needs and actionable change.
+    </p>
+</div>
+
             </div>
         </div>
     );
