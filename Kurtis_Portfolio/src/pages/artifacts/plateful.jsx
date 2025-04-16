@@ -39,7 +39,7 @@ function Plateful() {
         </div>
 
         {/* Description Section */}
-        <div className="text-left  mb-10">
+        <div className="text-center mb-10">
           <h2 className="font-outfit text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-4">
             Customizable menus, flexible scheduling, seamless bulk ordering
           </h2>

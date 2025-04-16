@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import WaterOverview from "../../components/Waterpieces/Water-overview";
 import Waterphoto from "../../assets/waterphotos/waterphoto.jpg";
+import WaterDiscovery from "../../components/Waterpieces/Water-discovery";
 import WaterResearch from "../../components/Waterpieces/Water-research";
 import Waterprimitives from "../../components/Waterpieces/Water-prim";
 import Watermockup from "../../components/Waterpieces/Water-mockup";
@@ -38,7 +39,7 @@ function Waterplus() {
                 </div>
 
                 {/* Description Section */}
-                <div className="text-left mb-10">
+                <div className="text-center mb-10">
                     <h2 className="font-outfit text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-4">
                         Water source mapping & community engagement
                     </h2>
@@ -46,6 +47,7 @@ function Waterplus() {
 
                 {/* Water+ Overview Component */}
                 <WaterOverview />
+                <WaterDiscovery />
                 <WaterResearch />
                 <Waterprimitives />
                 <Watermockup />
