@@ -43,6 +43,9 @@ function Plateful() {
           <h2 className="font-outfit text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-4">
             Customizable menus, flexible scheduling, seamless bulk ordering
           </h2>
+          <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
+                     A app focusing on helping the resturant industry with catering and bulk ordering.
+                     </p>
         </div>
 
         {/* Plateful Overview Component */}

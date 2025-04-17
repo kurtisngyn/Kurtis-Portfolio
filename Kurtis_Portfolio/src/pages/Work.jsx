@@ -16,7 +16,8 @@ function Work() {
   }, []);
 
   const projects = [
-    { label: "Craigslist", title: "Website Redesign", imageUrl: Mockupcraiglist, path: "/artifacts/craigslist", bgColor: "bg-blue-500" },
+    // { label: "Craigslist", title: "Website Redesign", imageUrl: Mockupcraiglist, path: "/artifacts/craigslist", bgColor: "bg-blue-500" },
+    { label: "Nature's Path", title: "Photo Gallery Website Design & Dev", imageUrl: Mockupcraiglist, path: "/artifacts/nature", bgColor: "bg-blue-500" },
     { label: "Jukebox", title: "Hypothetical App Launch", imageUrl: MockupJukebox, path: "/artifacts/jukebox", bgColor: "bg-orange-500" },
     { label: "Plateful!", title: "App Design", imageUrl: MockupPlateful, path: "/artifacts/plateful", bgColor: "bg-green-500" },
     { label: "Water+", title: "Hypothetical App Launch", imageUrl: MockupWaterplus, path: "/artifacts/waterplus", bgColor: "bg-teal-500" },
