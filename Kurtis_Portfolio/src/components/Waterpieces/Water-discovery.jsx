@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import bg from "../../assets/waterphotos/bgcard.png";
 import bg2 from "../../assets/waterphotos/bgcard2.png";
+import bg3 from "../../assets/waterphotos/bgcard3.png";
+import bg4 from "../../assets/waterphotos/bgcard4.png";
 
 function WaterDiscovery() {
     useEffect(() => {
@@ -54,7 +56,7 @@ pollution?
     className="bg-white rounded-2xl p-10 shadow-md bg-no-repeat bg-center bg-cover"
     data-aos="fade-down"
     data-aos-delay="200"
-    style={{ backgroundImage: `url(${bg})` }}
+    style={{ backgroundImage: `url(${bg2})` }}
 >
     <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
         Audience
@@ -84,7 +86,7 @@ pollution?
     className="bg-white rounded-2xl p-10 shadow-md lg:col-span-2 bg-no-repeat bg-center bg-cover"
     data-aos="fade-down"
     data-aos-delay="600"
-    style={{ backgroundImage: `url(${bg})` }}
+    style={{ backgroundImage: `url(${bg4})` }}
 >
     <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
         Opportunity to Innovate
