@@ -6,6 +6,7 @@ import PlatefulResearch from "../../components/Platefulpieces/Research";
 import PlatefulDiscovery from "../../components/Platefulpieces/Discovery";
 import PlatefulPrimitives from "../../components/Platefulpieces/Primitives";
 import Platefulproduct from "../../assets/platefulphotos/platefulproduct.png";
+import Platefulmockup from "../../components/Platefulpieces/Mockup";
 
 function Plateful() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function Plateful() {
         <PlatefulDiscovery />
         <PlatefulResearch />
         <PlatefulPrimitives />
+        <Platefulmockup />
       </div>
       
       {/* Footer Section */}

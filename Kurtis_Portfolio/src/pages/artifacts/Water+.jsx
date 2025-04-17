@@ -32,7 +32,7 @@ function Waterplus() {
                         <div className="text-xl md:text-2xl text-black">
                             <p className="mb-2"><strong>Role:</strong> Project Lead</p>
                             <p className="mb-2"><strong>Date:</strong> March 2025</p>
-                            <p className="mb-2"><strong>Duration:</strong> 3 months</p>
+                            <p className="mb-2"><strong>Duration:</strong> 2 months</p>
                             <p className="mb-2"><strong>Tools:</strong> Figma</p>
                         </div>
                     </div>
