@@ -1,44 +1,49 @@
 import React from "react";
-
-import craigslistempathymap from "../../assets/craiglistphotos/craigslistempathymap.png";
 import jukeoverview from "../../assets/Jukeboxphotos/jukeoverview.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Jukebrainstorm() {
+    React.useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    }, []);
+
     return (
-        <div className="bg-lavender py-12">
-            <div className="container mx-auto px-4">
-                <div className="flex-grow flex flex-col items-center justify-center">
+        <div className="text-left pl-4 mb-10">
+            {/* Brainstorming Section */}
+            <h2 className="font-outfit text-4xl sm:text-5xl md:text-6xl text-black font-semibold mb-4">
+                Brainstorm Phase
+            </h2>
+            <h3 className="font-outfit text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium mb-6">
+                Collaborating to create an engaging music experience.
+            </h3>
+            <p className="text-lg sm:text-xl md:text-xl lg:text-2xl text-black font-outfit mb-6">
+                The brainstorming process for creating our hypothetical app was a dynamic and collaborative effort that involved multiple stages of ideation and creativity. We began by gathering our team to discuss the app's purpose and target audience, encouraging each member to share their ideas freely.
+            </p>
 
-                    <h1 className="mb-4 font-quicksand font-semibold text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                        Brainstorm Phase
-                    </h1>
-                    <p className="mb-12 font-quicksand text-sm sm:text-base md:text-lg lg:text-xl text-black text-left max-w-3xl text-center">
-                    The brainstorming process for creating our hypothetical app was a dynamic and collaborative effort that involved multiple stages of ideation and creativity. We began by gathering our team to discuss the app's purpose and target audience, encouraging each member to share their ideas freely. </p>
-
-                    <div className="bg-white shadow-lg rounded-lg p-6 mb-8 w-full flex flex-col items-center">
-                        <h2 className="mb-4 font-quicksand font-semibold text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">
-                            Jukebox Discovery
-                        </h2>
-                        <p className="mb-6 font-quicksand text-sm sm:text-base text-black md:text-lg lg:text-xl text-center max-w-3xl">
-                        We designed Jukebox to be a dynamic and engaging music streaming platform that caters to the needs of music enthusiasts who value discovery, interaction, and simplicity. By combining innovative tools with a user-friendly design, Jukebox offers a seamless experience that bridges the gap between listening and sharing. Our goal was to create an app that not only delivers high-quality music streaming but also fosters creativity and connection among its users.
-                        </p>
-                        
-                        <img
-                            src={jukeoverview}
-                            alt="Craigslist Persona"
-                            className="max-w-full h-auto mb-10"
-                        />
-                    </div>
-
-
-                  
+            {/* Discovery Section */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-12 bg-white p-6 rounded-2xl shadow-md" data-aos="fade-down">
+                <div className="w-full md:w-1/2">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-black font-outfit">
+                        Jukebox Discovery
+                    </h2>
+                    <p className="text-lg sm:text-xl md:text-xl lg:text-2xl text-black font-outfit mb-6">
+                        We designed Jukebox to be a dynamic and engaging music streaming platform that caters to the needs of music enthusiasts who value discovery, interaction, and simplicity. By combining innovative tools with a user-friendly design, Jukebox offers a seamless experience that bridges the gap between listening and sharing.
+                    </p>
                 </div>
+                <img
+                    src={jukeoverview}
+                    alt="Jukebox Discovery"
+                    className="w-full md:w-1/2 rounded-2xl h-auto"
+                />
             </div>
+
+            {/* Additional Sections can be added below as needed, such as "User Persona" or "Challenges", following the similar pattern */}
         </div>
     );
 }
 
 export default Jukebrainstorm;
-
-
