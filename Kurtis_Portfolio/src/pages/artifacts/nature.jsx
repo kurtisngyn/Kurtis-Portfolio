@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import nature from "../../assets/nature.jpg";
-import NatureOverview from "../../components/Naturepieces/Nature-overview";
+import NatureOverview from "../../components/Naturepieces/Natureoveriew";
 import NatureMockup from "../../components/Naturepieces/NatureMockup";
 import Naturevid from "../../components/Naturepieces/Naturevid";
 
