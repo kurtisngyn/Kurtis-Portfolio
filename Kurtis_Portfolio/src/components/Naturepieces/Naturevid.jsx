@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Naturespath from "../../assets/naturephotos/naturespath.mp4";
+import Naturespath from "../../assets/naturephotos/Naturespath.mp4";
 
 function Naturevid() {
     useEffect(() => {
