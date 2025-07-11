@@ -4,11 +4,12 @@ import "aos/dist/aos.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import Mockupcraiglist from "../assets/mockupcraiglist.jpg";
+
 import MockupJukebox from "../assets/MockupJukebox.jpg";
 import MockupPlateful from "../assets/mockupplateful.jpg";
 import MockupWaterplus from "../assets/mockupwaterplus.jpg";
 import nature from "../assets/nature.jpg";
+import Tourdeforce from "../assets/Tourdeforce.jpg";
 
 function Work() {
   useEffect(() => {
@@ -17,7 +18,7 @@ function Work() {
   }, []);
 
   const projects = [
-    // { label: "Craigslist", title: "Website Redesign", imageUrl: Mockupcraiglist, path: "/artifacts/craigslist", bgColor: "bg-blue-500" },
+    { label: "Tour De Force", title: "Luxury Magazine Booklet", imageUrl: Tourdeforce, path: "/artifacts/TDF", bgColor: "bg-blue-500" },
     { label: "Nature's Path", title: "Photo Gallery Website Design & Dev", imageUrl: nature, path: "/artifacts/nature", bgColor: "bg-blue-500" },
     { label: "Jukebox", title: "Hypothetical App Launch", imageUrl: MockupJukebox, path: "/artifacts/jukebox", bgColor: "bg-orange-500" },
     { label: "Plateful!", title: "Ui Design and UX Strategy", imageUrl: MockupPlateful, path: "/artifacts/plateful", bgColor: "bg-green-500" },
@@ -40,6 +41,7 @@ function Work() {
 
           {/* GRID CONTAINER */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+
             {projects.map((project, index) => (
               <Link 
                 to={project.path} 
