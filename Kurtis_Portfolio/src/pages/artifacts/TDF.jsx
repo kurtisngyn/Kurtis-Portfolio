@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import Tourdeforce from "../../assets/TourDeForce.jpg";
+import TDFoverview from "../../components/TDFpieces/TDFoverview";
 
 
 function TDF() {
@@ -45,12 +46,12 @@ function TDF() {
                         Luxury Magazine Booklet
                     </h2>
                     <p className="text-xl lg:text-2xl text-black font-outfit leading-relaxed">
-                        This project is a fun website I made with design and development skills to showcase my photo gallery away from social media.
+                        Designed a high-end magazine booklet for a construction company to showcase their building process and craftsmanship. Focused on clean layouts, premium visuals, and a refined tone to reflect the brand’s luxury positioning. The booklet is used as a marketing piece for client presentations and events.
                     </p>
                 </div>
 
                 {/* Project Sections */}
-                
+                <TDFoverview />
             </div>
 
             <Footer />
