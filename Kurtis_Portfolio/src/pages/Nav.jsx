@@ -5,7 +5,6 @@ const Layout = () => {
     const location = useLocation();
     const [isAtBottom, setIsAtBottom] = useState(false);
 
-    // Function to check if the user has scrolled to the bottom
     useEffect(() => {
         const handleScroll = () => {
             const scrolledToBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
@@ -17,13 +16,13 @@ const Layout = () => {
     }, []);
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen relative">
             <main className="flex-grow">
                 <Outlet />
             </main>
 
-            {/* Floating navigation */}
-            <footer className="fixed bottom-6 left-1/2 mb-5 transform -translate-x-1/2 z-10">
+            {/* Floating Navigation Footer */}
+            <footer className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-[9999]">
                 <nav className={`rounded-full shadow-lg py-1.5 transition-colors duration-300 ${isAtBottom ? "bg-black text-white" : "bg-white text-black"}`}>
                     <ul className="font-quicksand text-base font-bold flex items-center space-x-4">
                         <li>
@@ -65,6 +64,7 @@ const Layout = () => {
                     </ul>
                 </nav>
             </footer>
+           
         </div>
     );
 };

@@ -6,7 +6,7 @@ const AnimatedLogo = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 392.18 448.81"
-      className="w-20 h-20"
+      className="w-20 h-[80px]"
     >
       <path
         className="logo-path"
