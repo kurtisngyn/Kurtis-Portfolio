@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Arrow from "./Arrow";
+import ProjectCarousel from "./ProjectCarousel";
 
 const HomeSection = () => {
   useEffect(() => {
@@ -9,7 +10,8 @@ const HomeSection = () => {
   }, []);
 
   return (
-    <section className="relative text-center bg-lavender min-h-screen flex flex-col items-center justify-start pt-20">
+  <section className="relative text-center bg-lavender min-h-screen flex flex-col items-center justify-start pt-12 sm:pt-16">
+
       <div className="max-w-3xl mx-auto" data-aos="fade-up">
         <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-2 font-sans">
           Hey, I’m Kurtis
@@ -22,8 +24,10 @@ const HomeSection = () => {
         </p>
       </div>
 
+    <ProjectCarousel />
+
       {/* Arrow fade-up too */}
-      <div className="mt-[300px]" data-aos="fade-up" data-aos-delay="400">
+      <div className="mt-[-5px]" data-aos="fade-up" data-aos-delay="400">
         <Arrow />
       </div>
     </section>
