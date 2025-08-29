@@ -10,7 +10,7 @@ const HomeSection = () => {
   }, []);
 
   return (
-  <section className="relative text-center bg-lavender min-h-screen flex flex-col items-center justify-start pt-12 sm:pt-16">
+  <section className="relative text-center  min-h-screen flex flex-col items-center mt-[-60px] justify-start pt-12 sm:pt-16">
 
       <div className="max-w-3xl mx-auto" data-aos="fade-up">
         <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-2 font-sans">
@@ -20,7 +20,11 @@ const HomeSection = () => {
           Product & Brand <br className="hidden sm:block" /> Designer
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-700 font-sans">
-          Trying to create physical experiences
+<<<<<<< HEAD
+          Translating digital design into meaningful physical experiences
+=======
+          Designing where physical meets digital
+>>>>>>> 60cfd84d48c24345697b372e7f2000ad680dc008
         </p>
       </div>
 
