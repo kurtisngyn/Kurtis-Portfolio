@@ -21,7 +21,11 @@ const HomeSection = () => {
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-700 font-sans">
 <<<<<<< HEAD
+<<<<<<< HEAD
           Translating digital design into meaningful physical experiences
+=======
+          Designing where physical meets digital
+>>>>>>> 60cfd84d48c24345697b372e7f2000ad680dc008
 =======
           Designing where physical meets digital
 >>>>>>> 60cfd84d48c24345697b372e7f2000ad680dc008
