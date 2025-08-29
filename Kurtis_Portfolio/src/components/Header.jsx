@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="grid grid-cols-[1fr_auto] items-center px-4 sm:px-6 md:px-8 py-2 sm:py-4 bg-lavender font-quicksand text-white text-lg">
+    <header className="grid grid-cols-[1fr_auto] items-center px-4 sm:px-6 md:px-8 py-2 sm:py-4 font-quicksand text-white text-lg">
       <div className="flex items-center -ml-3 sm:-ml-4">
         <Link to="/">
 

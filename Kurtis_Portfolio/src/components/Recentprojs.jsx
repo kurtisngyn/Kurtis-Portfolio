@@ -15,7 +15,7 @@ function RecentProjs() {
   return (
     <div 
       id="recent-projects"  // Add this ID to fix the arrow scroll issue
-      className="flex flex-col min-h-screen bg-lavender font-quicksand"
+      className="flex flex-col min-h-screen font-quicksand"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 mt-10">
         <h1 

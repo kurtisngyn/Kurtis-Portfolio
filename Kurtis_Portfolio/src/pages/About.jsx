@@ -18,11 +18,11 @@ const About = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-lavender">
+    <div className="min-h-screen flex flex-col">
       <Header />
 
       {/* Content Container */}
-      <div className="flex-grow bg-periwinkle rounded-t-3xl px-8 sm:px-8 md:px-10 pt-16 pb-16">
+      <div className="flex-grow noise-bg-periwinkle  rounded-t-3xl px-8 sm:px-8 md:px-10 pt-16 pb-16">
         <div className="grid grid-cols-[1fr_auto] items-center mb-10">
           <h1
             data-aos="fade-right"
@@ -34,7 +34,7 @@ const About = () => {
           <button
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1ps0LRRFwsbk9WS_v4E5My2mJXoguL5hz/view?usp=drive_link",
+                "https://drive.google.com/file/d/1zIi6gyI9Eh3lVnK8nZ-3AtOISlfFe7fz/view?usp=sharing",
                 "_blank"
               )
             }

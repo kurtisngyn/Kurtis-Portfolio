@@ -9,14 +9,12 @@ import HomeSection from "../components/HomeSection";
 const Home = () => {
   
   return (
-    <div className="flex flex-col min-h-screen bg-lavender">
+    <div className="flex flex-col min-h-screen">
       {/* Header */}
       <Header />
 
    
       <HomeSection />
-
-
 
 
 
