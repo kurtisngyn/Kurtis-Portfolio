@@ -20,7 +20,7 @@ const HomeSection = () => {
           Product & Brand <br className="hidden sm:block" /> Designer
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-700 font-sans">
-          Trying to create physical experiences
+          Designing where physical meets digital
         </p>
       </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Logopurple from "../assets/Logopurple.svg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faSquareGithub, faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
+import Logo from "./Logo"; // this is your React component
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faSquareGithub, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-black  font-outfit text-white rounded-t-3xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 mt-[-26px] pb-32 md:pb-24">
+    <footer className="w-full bg-black font-outfit text-white rounded-t-3xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 mt-[-26px] pb-32 md:pb-24">
       {/* Flex wrapper ensuring both sections align */}
       <div className="flex flex-col md:flex-row justify-between items-center w-full">
         
@@ -28,12 +28,12 @@ const Footer = () => {
 
         {/* Right Section */}
         <div className="flex flex-col items-center md:items-end">
-          <img
-            src={Logopurple}
-            alt="Logo"
-            className="w-16 h-16 sm:w-24 sm:h-24 cursor-pointer mb-4 md:mb-0"
+          <div
+            className="cursor-pointer mb-4 md:mb-0"
             onClick={scrollToTop}
-          />
+          >
+            <Logo className="w-16 h-16 sm:w-24 sm:h-24" />
+          </div>
           <div className="flex justify-center gap-4 mt-4">
             <a href="https://www.linkedin.com/in/kurtisnguyen1/" target="_blank" rel="noreferrer">
               <FontAwesomeIcon 
