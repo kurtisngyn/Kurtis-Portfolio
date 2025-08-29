@@ -27,9 +27,9 @@ const HomeSection = () => {
     <ProjectCarousel />
 
       {/* Arrow fade-up too */}
-      <div className="mt-[-5px]" data-aos="fade-up" data-aos-delay="400">
+    
         <Arrow />
-      </div>
+  
     </section>
   );
 };
