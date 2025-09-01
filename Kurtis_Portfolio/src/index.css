@@ -10,12 +10,35 @@
   background-repeat: repeat;
   background-size: 150px 150px;
 }
+
 /* Periwinkle noise */
 .noise-bg-periwinkle {
   background-color: #BEB7DF; /* periwinkle */
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aW..."); /* your periwinkle noise */
   background-repeat: repeat;
   background-size: 200px 200px;
+}
+
+/* --- Animated Noise Spread --- */
+.bg-noise-animated {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGZpbHRlciBpZD0ibm9pc2UiPjxmZVR1cmJ1bGVuY2UgdHlwZT0ibm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuOCIgbnVtT2N0YXZlcz0iMTAiLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjbm9pc2UpIiBmaWxsPSIjMzMzMzMzIi8+PC9zdmc+");
+  background-repeat: repeat;
+  background-size: 5px 5px;
+  animation: noiseSpread 4s ease-in-out forwards;
+}
+
+@keyframes noiseSpread {
+  0% {
+    background-size: 5px 5px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-size: 40px 40px;
+    opacity: 0.8;
+  }
 }
 
 /* SVG stroke draw animation */
