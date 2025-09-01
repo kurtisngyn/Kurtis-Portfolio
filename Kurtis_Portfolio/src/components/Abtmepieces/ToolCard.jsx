@@ -6,6 +6,7 @@ import Aeicon from "../../assets/Abtassets/ae.svg";
 import Pricon from "../../assets/Abtassets/pr.svg";
 import Aiicon from "../../assets/Abtassets/ai.svg";
 import Psicon from "../../assets/Abtassets/ps.svg";
+import Reacticon from "../../assets/Abtassets/react.svg";
 
 library.add(fab);
 
@@ -14,7 +15,8 @@ function ToolCard() {
 
   const allTools = [
     { icon: ["fab", "figma"], name: "Figma" },
-    { icon: ["fab", "react"], name: "ReactJS" },
+    // { icon: ["fab", "react"], name: "ReactJS" },
+    { src: Reacticon, name: "ReactJS" },
     { icon: ["fab", "html5"], name: "HTML5" },
     { icon: ["fab", "css3-alt"], name: "CSS3" },
     { icon: ["fab", "js-square"], name: "JavaScript" },
