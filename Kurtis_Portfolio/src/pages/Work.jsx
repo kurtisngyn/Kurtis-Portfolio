@@ -27,7 +27,7 @@ function Work() {
 
   return (
     <div className="flex flex-col min-h-screen"> 
-  <Header />
+
 
   {/* White background for content */}
   <div className="flex-grow bg-white rounded-t-3xl pt-16 pb-16 px-4 lg:px-20 xl:px-32">

@@ -19,8 +19,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
-
+      
       {/* Content Container */}
       <div className="flex-grow noise-bg-periwinkle  rounded-t-3xl px-8 sm:px-8 md:px-10 pt-16 pb-16">
         <div className="grid grid-cols-[1fr_auto] items-center mb-10">
